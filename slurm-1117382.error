@@ -1,0 +1,795 @@
+srun: fatal: No command given to execute.
+DeepSdf - INFO - running examples/smplf
+DeepSdf - INFO - Experiment description:This experiment learns a shape representation for smpl_f using data from SMPL mesh.
+DeepSdf - INFO - {'warper_kargs': {'hidden_size': 512, 'steps': 8}, 'decoder_kargs': {'dims': [256, 256, 256, 256, 256], 'dropout': [0, 1, 2, 3, 4], 'dropout_prob': 0.05, 'norm_layers': [0, 1, 2, 3, 4], 'xyz_in_all': False, 'weight_norm': True}}
+DeepSdf - INFO - training with 1 GPU(s)
+DeepSdf - DEBUG - using 100 shapes from data source ./data
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|1         | 1/100 [00:00<00:14,  6.91it/s]  2%|2         | 2/100 [00:00<00:12,  7.74it/s]  3%|3         | 3/100 [00:00<00:12,  7.85it/s]  4%|4         | 4/100 [00:00<00:12,  7.40it/s]  5%|5         | 5/100 [00:00<00:12,  7.61it/s]  6%|6         | 6/100 [00:00<00:12,  7.37it/s]  7%|7         | 7/100 [00:00<00:13,  6.72it/s]  8%|8         | 8/100 [00:01<00:16,  5.60it/s]  9%|9         | 9/100 [00:01<00:16,  5.55it/s] 10%|#         | 10/100 [00:01<00:17,  5.28it/s] 11%|#1        | 11/100 [00:01<00:19,  4.67it/s] 12%|#2        | 12/100 [00:02<00:17,  4.97it/s] 13%|#3        | 13/100 [00:02<00:17,  5.04it/s] 14%|#4        | 14/100 [00:02<00:15,  5.55it/s] 15%|#5        | 15/100 [00:02<00:15,  5.57it/s] 16%|#6        | 16/100 [00:02<00:13,  6.40it/s] 17%|#7        | 17/100 [00:02<00:12,  6.75it/s] 18%|#8        | 18/100 [00:02<00:12,  6.79it/s] 20%|##        | 20/100 [00:03<00:10,  7.42it/s] 21%|##1       | 21/100 [00:03<00:11,  7.13it/s] 22%|##2       | 22/100 [00:03<00:10,  7.62it/s] 23%|##3       | 23/100 [00:03<00:10,  7.35it/s] 24%|##4       | 24/100 [00:03<00:10,  7.02it/s] 25%|##5       | 25/100 [00:03<00:10,  6.87it/s] 26%|##6       | 26/100 [00:04<00:10,  6.76it/s] 27%|##7       | 27/100 [00:04<00:11,  6.16it/s] 28%|##8       | 28/100 [00:04<00:11,  6.12it/s] 29%|##9       | 29/100 [00:04<00:12,  5.88it/s] 30%|###       | 30/100 [00:04<00:11,  6.09it/s] 32%|###2      | 32/100 [00:04<00:09,  7.31it/s] 33%|###3      | 33/100 [00:05<00:08,  7.45it/s] 34%|###4      | 34/100 [00:05<00:08,  7.77it/s] 35%|###5      | 35/100 [00:05<00:08,  7.92it/s] 36%|###6      | 36/100 [00:05<00:09,  6.62it/s] 38%|###8      | 38/100 [00:05<00:08,  6.98it/s] 39%|###9      | 39/100 [00:05<00:08,  7.26it/s] 40%|####      | 40/100 [00:06<00:07,  7.66it/s] 41%|####1     | 41/100 [00:06<00:07,  8.15it/s] 42%|####2     | 42/100 [00:06<00:07,  8.24it/s] 43%|####3     | 43/100 [00:06<00:07,  8.05it/s] 44%|####4     | 44/100 [00:06<00:08,  6.40it/s] 45%|####5     | 45/100 [00:06<00:08,  6.36it/s] 46%|####6     | 46/100 [00:06<00:07,  6.86it/s] 47%|####6     | 47/100 [00:07<00:07,  7.19it/s] 48%|####8     | 48/100 [00:07<00:06,  7.64it/s] 50%|#####     | 50/100 [00:07<00:06,  7.48it/s] 51%|#####1    | 51/100 [00:07<00:06,  7.57it/s] 52%|#####2    | 52/100 [00:07<00:06,  7.36it/s] 53%|#####3    | 53/100 [00:07<00:06,  6.92it/s] 55%|#####5    | 55/100 [00:08<00:05,  7.96it/s] 56%|#####6    | 56/100 [00:08<00:05,  7.75it/s] 57%|#####6    | 57/100 [00:08<00:05,  7.56it/s] 58%|#####8    | 58/100 [00:08<00:05,  7.81it/s] 59%|#####8    | 59/100 [00:08<00:05,  7.67it/s] 60%|######    | 60/100 [00:08<00:05,  7.76it/s] 61%|######1   | 61/100 [00:08<00:04,  7.83it/s] 62%|######2   | 62/100 [00:08<00:04,  8.03it/s] 63%|######3   | 63/100 [00:09<00:04,  8.15it/s] 64%|######4   | 64/100 [00:09<00:05,  6.04it/s] 65%|######5   | 65/100 [00:09<00:05,  6.53it/s] 66%|######6   | 66/100 [00:09<00:05,  6.62it/s] 67%|######7   | 67/100 [00:09<00:04,  6.79it/s] 68%|######8   | 68/100 [00:09<00:04,  7.06it/s] 69%|######9   | 69/100 [00:09<00:04,  7.53it/s] 70%|#######   | 70/100 [00:10<00:04,  6.89it/s] 72%|#######2  | 72/100 [00:10<00:03,  7.94it/s] 73%|#######3  | 73/100 [00:10<00:03,  8.14it/s] 74%|#######4  | 74/100 [00:10<00:03,  7.12it/s] 75%|#######5  | 75/100 [00:10<00:03,  7.40it/s] 76%|#######6  | 76/100 [00:10<00:03,  7.89it/s] 77%|#######7  | 77/100 [00:11<00:02,  7.85it/s] 78%|#######8  | 78/100 [00:11<00:02,  7.81it/s] 80%|########  | 80/100 [00:11<00:02,  8.50it/s] 81%|########1 | 81/100 [00:11<00:02,  7.97it/s] 82%|########2 | 82/100 [00:11<00:02,  8.26it/s] 83%|########2 | 83/100 [00:11<00:02,  6.24it/s] 84%|########4 | 84/100 [00:12<00:02,  6.50it/s] 86%|########6 | 86/100 [00:12<00:01,  7.49it/s] 87%|########7 | 87/100 [00:12<00:01,  7.41it/s] 88%|########8 | 88/100 [00:12<00:01,  7.27it/s] 89%|########9 | 89/100 [00:12<00:01,  6.73it/s] 90%|######### | 90/100 [00:12<00:01,  7.00it/s] 91%|#########1| 91/100 [00:13<00:02,  3.53it/s] 92%|#########2| 92/100 [00:13<00:01,  4.15it/s] 93%|#########3| 93/100 [00:13<00:01,  4.48it/s] 94%|#########3| 94/100 [00:13<00:01,  4.89it/s] 95%|#########5| 95/100 [00:14<00:00,  5.38it/s] 96%|#########6| 96/100 [00:14<00:00,  6.06it/s] 97%|#########7| 97/100 [00:14<00:00,  6.10it/s] 98%|#########8| 98/100 [00:14<00:00,  6.57it/s] 99%|#########9| 99/100 [00:14<00:00,  7.00it/s]100%|##########| 100/100 [00:14<00:00,  7.47it/s]100%|##########| 100/100 [00:14<00:00,  6.79it/s]
+DeepSdf - DEBUG - loading data with 0 threads
+DeepSdf - DEBUG - torch num_threads: 12
+DeepSdf - INFO - There are 100 scenes
+DeepSdf - INFO - DataParallel(
+  (module): Decoder(
+    (warper): Warper(
+      (lstm): LSTMCell(13, 512)
+      (out_layer_coord_affine): Linear(in_features=512, out_features=6, bias=True)
+    )
+    (sdf_decoder): SdfDecoder(
+      (lin0): Linear(in_features=3, out_features=256, bias=True)
+      (lin1): Linear(in_features=256, out_features=256, bias=True)
+      (lin2): Linear(in_features=256, out_features=256, bias=True)
+      (lin3): Linear(in_features=256, out_features=256, bias=True)
+      (lin4): Linear(in_features=256, out_features=256, bias=True)
+      (lin5): Linear(in_features=256, out_features=1, bias=True)
+      (relu): ReLU()
+      (th): Tanh()
+    )
+  )
+)
+DeepSdf - WARNING - "latest" does not exist! Ignoring this argument...
+DeepSdf - INFO - starting from epoch 1
+DeepSdf - INFO - Number of decoder parameters: 1348103
+DeepSdf - INFO - pointwise_loss_weight = 0.005, pointpair_loss_weight = 0.0001
+DeepSdf - INFO - epoch 1...
+DeepSdf - DEBUG - sdf_loss = 0.053594547, reg_loss = 2.111678303, pw_loss = 0.000000002, pp_loss = 0.000000000
+DeepSdf - DEBUG - sdf_loss = 0.035862655, reg_loss = 2.241872009, pw_loss = 0.001953539, pp_loss = 0.000000000
+DeepSdf - DEBUG - sdf_loss = 0.032675003, reg_loss = 2.262855293, pw_loss = 0.003265718, pp_loss = 0.000000000
+DeepSdf - DEBUG - sdf_loss = 0.036646301, reg_loss = 2.107375767, pw_loss = 0.002524431, pp_loss = 0.000000000
+DeepSdf - INFO - epoch 2...
+DeepSdf - DEBUG - sdf_loss = 0.034408215, reg_loss = 2.098121678, pw_loss = 0.001391627, pp_loss = 0.000000000
+DeepSdf - DEBUG - sdf_loss = 0.031642936, reg_loss = 2.192163035, pw_loss = 0.001060432, pp_loss = 0.000000000
+DeepSdf - DEBUG - sdf_loss = 0.031144498, reg_loss = 2.232353438, pw_loss = 0.000989672, pp_loss = 0.000000000
+DeepSdf - DEBUG - sdf_loss = 0.031778564, reg_loss = 2.221494050, pw_loss = 0.001206997, pp_loss = 0.000000000
+DeepSdf - INFO - epoch 3...
+DeepSdf - DEBUG - sdf_loss = 0.032287830, reg_loss = 2.152861768, pw_loss = 0.001143712, pp_loss = 0.000000000
+DeepSdf - DEBUG - sdf_loss = 0.031984817, reg_loss = 2.220588871, pw_loss = 0.001134070, pp_loss = 0.000000000
+DeepSdf - DEBUG - sdf_loss = 0.031202028, reg_loss = 2.167612121, pw_loss = 0.001010083, pp_loss = 0.000000000
+DeepSdf - DEBUG - sdf_loss = 0.030129376, reg_loss = 2.210881265, pw_loss = 0.000880887, pp_loss = 0.000000132
+DeepSdf - INFO - epoch 4...
+DeepSdf - DEBUG - sdf_loss = 0.029760192, reg_loss = 2.212584898, pw_loss = 0.000743771, pp_loss = 0.000001992
+DeepSdf - DEBUG - sdf_loss = 0.029458051, reg_loss = 2.177496968, pw_loss = 0.000707791, pp_loss = 0.000058703
+DeepSdf - DEBUG - sdf_loss = 0.029327241, reg_loss = 2.127406754, pw_loss = 0.000704426, pp_loss = 0.001083170
+DeepSdf - DEBUG - sdf_loss = 0.028570310, reg_loss = 2.211580653, pw_loss = 0.000993010, pp_loss = 0.016799672
+DeepSdf - INFO - epoch 5...
+DeepSdf - DEBUG - sdf_loss = 0.027844932, reg_loss = 2.220307024, pw_loss = 0.001355069, pp_loss = 0.101909667
+DeepSdf - DEBUG - sdf_loss = 0.027569136, reg_loss = 2.228712213, pw_loss = 0.002253126, pp_loss = 0.715676716
+DeepSdf - DEBUG - sdf_loss = 0.027371425, reg_loss = 2.100955122, pw_loss = 0.002678932, pp_loss = 1.934247001
+DeepSdf - DEBUG - sdf_loss = 0.026333461, reg_loss = 2.142402536, pw_loss = 0.002899923, pp_loss = 3.275279062
+DeepSdf - INFO - epoch 6...
+DeepSdf - DEBUG - sdf_loss = 0.025738834, reg_loss = 2.136837746, pw_loss = 0.003368552, pp_loss = 6.018083652
+DeepSdf - DEBUG - sdf_loss = 0.025492177, reg_loss = 2.302468634, pw_loss = 0.004271368, pp_loss = 13.398588960
+DeepSdf - DEBUG - sdf_loss = 0.024689324, reg_loss = 2.124658947, pw_loss = 0.005342872, pp_loss = 24.297167636
+DeepSdf - DEBUG - sdf_loss = 0.024514871, reg_loss = 2.145045974, pw_loss = 0.006354815, pp_loss = 41.402433013
+DeepSdf - INFO - epoch 7...
+DeepSdf - DEBUG - sdf_loss = 0.023885700, reg_loss = 2.197822302, pw_loss = 0.007487284, pp_loss = 53.459147644
+DeepSdf - DEBUG - sdf_loss = 0.023069211, reg_loss = 2.174725813, pw_loss = 0.007778357, pp_loss = 62.964201229
+DeepSdf - DEBUG - sdf_loss = 0.022628179, reg_loss = 2.107427497, pw_loss = 0.008958530, pp_loss = 78.758135195
+DeepSdf - DEBUG - sdf_loss = 0.022138537, reg_loss = 2.201474259, pw_loss = 0.009925111, pp_loss = 87.202532680
+DeepSdf - INFO - epoch 8...
+DeepSdf - DEBUG - sdf_loss = 0.021927509, reg_loss = 2.154548262, pw_loss = 0.009643828, pp_loss = 87.837489093
+DeepSdf - DEBUG - sdf_loss = 0.021436762, reg_loss = 2.073048178, pw_loss = 0.009411804, pp_loss = 80.104367650
+DeepSdf - DEBUG - sdf_loss = 0.021327296, reg_loss = 2.305284878, pw_loss = 0.008430005, pp_loss = 61.872499704
+DeepSdf - DEBUG - sdf_loss = 0.021120535, reg_loss = 2.123848356, pw_loss = 0.007750291, pp_loss = 53.255094415
+DeepSdf - INFO - epoch 9...
+DeepSdf - DEBUG - sdf_loss = 0.020890753, reg_loss = 2.102062122, pw_loss = 0.006963436, pp_loss = 40.795662233
+DeepSdf - DEBUG - sdf_loss = 0.020624321, reg_loss = 2.150956317, pw_loss = 0.006290634, pp_loss = 31.309976676
+DeepSdf - DEBUG - sdf_loss = 0.020604856, reg_loss = 2.334176643, pw_loss = 0.005778455, pp_loss = 25.176297737
+DeepSdf - DEBUG - sdf_loss = 0.020278569, reg_loss = 2.160702193, pw_loss = 0.005157032, pp_loss = 18.561127613
+DeepSdf - INFO - epoch 10...
+DeepSdf - DEBUG - sdf_loss = 0.019942015, reg_loss = 2.139622185, pw_loss = 0.004743242, pp_loss = 13.539715181
+DeepSdf - DEBUG - sdf_loss = 0.019994605, reg_loss = 2.181961081, pw_loss = 0.004278351, pp_loss = 10.733294068
+DeepSdf - DEBUG - sdf_loss = 0.019552798, reg_loss = 2.176458089, pw_loss = 0.003979030, pp_loss = 7.525654138
+DeepSdf - DEBUG - sdf_loss = 0.019469625, reg_loss = 2.225802386, pw_loss = 0.003391079, pp_loss = 4.358163318
+DeepSdf - INFO - epoch 11...
+DeepSdf - DEBUG - sdf_loss = 0.019328276, reg_loss = 2.211560476, pw_loss = 0.003380038, pp_loss = 4.302687715
+DeepSdf - DEBUG - sdf_loss = 0.019247303, reg_loss = 2.152127863, pw_loss = 0.002917752, pp_loss = 2.242209999
+DeepSdf - DEBUG - sdf_loss = 0.019037327, reg_loss = 2.180650637, pw_loss = 0.003130763, pp_loss = 2.954494194
+DeepSdf - DEBUG - sdf_loss = 0.018532058, reg_loss = 2.182799846, pw_loss = 0.002613932, pp_loss = 1.781933913
+DeepSdf - INFO - epoch 12...
+DeepSdf - DEBUG - sdf_loss = 0.018406802, reg_loss = 2.265681533, pw_loss = 0.002402030, pp_loss = 1.469099251
+DeepSdf - DEBUG - sdf_loss = 0.018550365, reg_loss = 2.137612990, pw_loss = 0.002182032, pp_loss = 0.872042448
+DeepSdf - DEBUG - sdf_loss = 0.018378273, reg_loss = 2.133120695, pw_loss = 0.002547650, pp_loss = 1.213650122
+DeepSdf - DEBUG - sdf_loss = 0.018736870, reg_loss = 2.141240833, pw_loss = 0.001881501, pp_loss = 0.479282388
+DeepSdf - INFO - epoch 13...
+DeepSdf - DEBUG - sdf_loss = 0.018704699, reg_loss = 2.222698971, pw_loss = 0.001726232, pp_loss = 0.491966791
+DeepSdf - DEBUG - sdf_loss = 0.019080063, reg_loss = 2.178576842, pw_loss = 0.001797927, pp_loss = 0.337250370
+DeepSdf - DEBUG - sdf_loss = 0.019306615, reg_loss = 2.085740679, pw_loss = 0.001798206, pp_loss = 0.467721008
+DeepSdf - DEBUG - sdf_loss = 0.018522396, reg_loss = 2.220608244, pw_loss = 0.001660247, pp_loss = 0.318689755
+DeepSdf - INFO - epoch 14...
+DeepSdf - DEBUG - sdf_loss = 0.017816249, reg_loss = 2.142379489, pw_loss = 0.001554243, pp_loss = 0.290537508
+DeepSdf - DEBUG - sdf_loss = 0.019399768, reg_loss = 2.200399553, pw_loss = 0.001882076, pp_loss = 0.407523988
+DeepSdf - DEBUG - sdf_loss = 0.018259675, reg_loss = 2.133614882, pw_loss = 0.001625428, pp_loss = 0.317664360
+DeepSdf - DEBUG - sdf_loss = 0.018437528, reg_loss = 2.233142038, pw_loss = 0.001710887, pp_loss = 0.264353002
+DeepSdf - INFO - epoch 15...
+DeepSdf - DEBUG - sdf_loss = 0.019241034, reg_loss = 2.248437390, pw_loss = 0.001959604, pp_loss = 0.518817991
+DeepSdf - DEBUG - sdf_loss = 0.017436038, reg_loss = 2.207311461, pw_loss = 0.001758627, pp_loss = 0.411999292
+DeepSdf - DEBUG - sdf_loss = 0.018692120, reg_loss = 2.062501709, pw_loss = 0.001642842, pp_loss = 0.230029898
+DeepSdf - DEBUG - sdf_loss = 0.018439264, reg_loss = 2.156234134, pw_loss = 0.001724971, pp_loss = 0.266862543
+DeepSdf - INFO - epoch 16...
+DeepSdf - DEBUG - sdf_loss = 0.018293834, reg_loss = 2.234545306, pw_loss = 0.001920493, pp_loss = 0.342878774
+DeepSdf - DEBUG - sdf_loss = 0.018358525, reg_loss = 2.111707397, pw_loss = 0.001926349, pp_loss = 0.342645845
+DeepSdf - DEBUG - sdf_loss = 0.019554493, reg_loss = 2.231704707, pw_loss = 0.002279193, pp_loss = 0.412528853
+DeepSdf - DEBUG - sdf_loss = 0.018350542, reg_loss = 2.143043785, pw_loss = 0.001886886, pp_loss = 0.308578316
+DeepSdf - INFO - epoch 17...
+DeepSdf - DEBUG - sdf_loss = 0.017652463, reg_loss = 2.238900976, pw_loss = 0.001697773, pp_loss = 0.290614548
+DeepSdf - DEBUG - sdf_loss = 0.017964794, reg_loss = 2.200572805, pw_loss = 0.001706168, pp_loss = 0.345554741
+DeepSdf - DEBUG - sdf_loss = 0.017560264, reg_loss = 2.266762261, pw_loss = 0.001615672, pp_loss = 0.291048750
+DeepSdf - DEBUG - sdf_loss = 0.016517494, reg_loss = 2.010247337, pw_loss = 0.001694490, pp_loss = 0.383241334
+DeepSdf - INFO - epoch 18...
+DeepSdf - DEBUG - sdf_loss = 0.017244738, reg_loss = 2.240600172, pw_loss = 0.001736734, pp_loss = 0.370874299
+DeepSdf - DEBUG - sdf_loss = 0.018007580, reg_loss = 2.193830518, pw_loss = 0.001793866, pp_loss = 0.455829627
+DeepSdf - DEBUG - sdf_loss = 0.016915603, reg_loss = 2.067570313, pw_loss = 0.001822147, pp_loss = 0.436604617
+DeepSdf - DEBUG - sdf_loss = 0.017008622, reg_loss = 2.190474513, pw_loss = 0.001568190, pp_loss = 0.245736821
+DeepSdf - INFO - epoch 19...
+DeepSdf - DEBUG - sdf_loss = 0.016847823, reg_loss = 2.220391452, pw_loss = 0.001577594, pp_loss = 0.309808273
+DeepSdf - DEBUG - sdf_loss = 0.016308610, reg_loss = 2.205805329, pw_loss = 0.001653497, pp_loss = 0.329561185
+DeepSdf - DEBUG - sdf_loss = 0.016107427, reg_loss = 2.127987713, pw_loss = 0.001635666, pp_loss = 0.316729168
+DeepSdf - DEBUG - sdf_loss = 0.016509525, reg_loss = 2.177284955, pw_loss = 0.001606489, pp_loss = 0.352739967
+DeepSdf - INFO - epoch 20...
+DeepSdf - DEBUG - sdf_loss = 0.015796140, reg_loss = 2.218732521, pw_loss = 0.001522669, pp_loss = 0.385789744
+DeepSdf - DEBUG - sdf_loss = 0.015666016, reg_loss = 2.172441796, pw_loss = 0.001386162, pp_loss = 0.168443953
+DeepSdf - DEBUG - sdf_loss = 0.015774909, reg_loss = 2.108072515, pw_loss = 0.001557027, pp_loss = 0.301285533
+DeepSdf - DEBUG - sdf_loss = 0.015462131, reg_loss = 2.238542250, pw_loss = 0.001430184, pp_loss = 0.272203976
+DeepSdf - INFO - epoch 21...
+DeepSdf - DEBUG - sdf_loss = 0.015257508, reg_loss = 2.072356929, pw_loss = 0.001492651, pp_loss = 0.344869947
+DeepSdf - DEBUG - sdf_loss = 0.015790936, reg_loss = 2.229648784, pw_loss = 0.001379669, pp_loss = 0.163804498
+DeepSdf - DEBUG - sdf_loss = 0.015588065, reg_loss = 2.255138800, pw_loss = 0.001598129, pp_loss = 0.314359597
+DeepSdf - DEBUG - sdf_loss = 0.015268400, reg_loss = 2.143413274, pw_loss = 0.001435724, pp_loss = 0.146994109
+DeepSdf - INFO - epoch 22...
+DeepSdf - DEBUG - sdf_loss = 0.015088789, reg_loss = 2.156376513, pw_loss = 0.001415810, pp_loss = 0.237332149
+DeepSdf - DEBUG - sdf_loss = 0.015164319, reg_loss = 2.131546939, pw_loss = 0.001318442, pp_loss = 0.117613295
+DeepSdf - DEBUG - sdf_loss = 0.015089330, reg_loss = 2.194309564, pw_loss = 0.001347530, pp_loss = 0.155412264
+DeepSdf - DEBUG - sdf_loss = 0.015064183, reg_loss = 2.255789637, pw_loss = 0.001361545, pp_loss = 0.309700020
+DeepSdf - INFO - epoch 23...
+DeepSdf - DEBUG - sdf_loss = 0.014661459, reg_loss = 2.264987046, pw_loss = 0.001328689, pp_loss = 0.160546779
+DeepSdf - DEBUG - sdf_loss = 0.014639002, reg_loss = 2.177906359, pw_loss = 0.001165910, pp_loss = 0.103564671
+DeepSdf - DEBUG - sdf_loss = 0.014675794, reg_loss = 2.078940316, pw_loss = 0.001265736, pp_loss = 0.144476854
+DeepSdf - DEBUG - sdf_loss = 0.014556790, reg_loss = 2.204090212, pw_loss = 0.001141000, pp_loss = 0.092937113
+DeepSdf - INFO - epoch 24...
+DeepSdf - DEBUG - sdf_loss = 0.014440855, reg_loss = 2.218810338, pw_loss = 0.001258637, pp_loss = 0.126766822
+DeepSdf - DEBUG - sdf_loss = 0.014463206, reg_loss = 2.086055998, pw_loss = 0.001234757, pp_loss = 0.162984059
+DeepSdf - DEBUG - sdf_loss = 0.014320413, reg_loss = 2.119048627, pw_loss = 0.001140808, pp_loss = 0.049478703
+DeepSdf - DEBUG - sdf_loss = 0.014392652, reg_loss = 2.295944138, pw_loss = 0.001108296, pp_loss = 0.068491735
+DeepSdf - INFO - epoch 25...
+DeepSdf - DEBUG - sdf_loss = 0.014222544, reg_loss = 2.236510694, pw_loss = 0.001221226, pp_loss = 0.073792803
+DeepSdf - DEBUG - sdf_loss = 0.014201902, reg_loss = 2.195629920, pw_loss = 0.001073971, pp_loss = 0.077921341
+DeepSdf - DEBUG - sdf_loss = 0.013931352, reg_loss = 2.135868363, pw_loss = 0.001146103, pp_loss = 0.117453195
+DeepSdf - DEBUG - sdf_loss = 0.014009876, reg_loss = 2.188437402, pw_loss = 0.001019543, pp_loss = 0.043697605
+DeepSdf - INFO - epoch 26...
+DeepSdf - DEBUG - sdf_loss = 0.013894665, reg_loss = 2.268801422, pw_loss = 0.001119641, pp_loss = 0.078417590
+DeepSdf - DEBUG - sdf_loss = 0.013718586, reg_loss = 2.125983867, pw_loss = 0.001090731, pp_loss = 0.078101518
+DeepSdf - DEBUG - sdf_loss = 0.013826575, reg_loss = 2.194040614, pw_loss = 0.001067377, pp_loss = 0.090878588
+DeepSdf - DEBUG - sdf_loss = 0.013766259, reg_loss = 2.158126775, pw_loss = 0.001266364, pp_loss = 0.161279604
+DeepSdf - INFO - epoch 27...
+DeepSdf - DEBUG - sdf_loss = 0.013599656, reg_loss = 2.158743562, pw_loss = 0.001167319, pp_loss = 0.065394621
+DeepSdf - DEBUG - sdf_loss = 0.013563542, reg_loss = 2.168269820, pw_loss = 0.001278592, pp_loss = 0.138286445
+DeepSdf - DEBUG - sdf_loss = 0.013580100, reg_loss = 2.180710420, pw_loss = 0.001090363, pp_loss = 0.057030752
+DeepSdf - DEBUG - sdf_loss = 0.013539912, reg_loss = 2.207268369, pw_loss = 0.001002427, pp_loss = 0.051327828
+DeepSdf - INFO - epoch 28...
+DeepSdf - DEBUG - sdf_loss = 0.013435846, reg_loss = 2.170344171, pw_loss = 0.001164349, pp_loss = 0.095154846
+DeepSdf - DEBUG - sdf_loss = 0.013380443, reg_loss = 2.220381905, pw_loss = 0.001186407, pp_loss = 0.068847031
+DeepSdf - DEBUG - sdf_loss = 0.013234215, reg_loss = 2.167568950, pw_loss = 0.001136832, pp_loss = 0.067661813
+DeepSdf - DEBUG - sdf_loss = 0.013207414, reg_loss = 2.151567462, pw_loss = 0.001172113, pp_loss = 0.045353689
+DeepSdf - INFO - epoch 29...
+DeepSdf - DEBUG - sdf_loss = 0.013351430, reg_loss = 2.236003067, pw_loss = 0.001132641, pp_loss = 0.104380634
+DeepSdf - DEBUG - sdf_loss = 0.013221241, reg_loss = 2.236188839, pw_loss = 0.001087963, pp_loss = 0.043993597
+DeepSdf - DEBUG - sdf_loss = 0.013164988, reg_loss = 2.162706014, pw_loss = 0.001287088, pp_loss = 0.123531265
+DeepSdf - DEBUG - sdf_loss = 0.013048148, reg_loss = 2.132968257, pw_loss = 0.001248368, pp_loss = 0.067398001
+DeepSdf - INFO - epoch 30...
+DeepSdf - DEBUG - sdf_loss = 0.013113039, reg_loss = 2.217732151, pw_loss = 0.001255725, pp_loss = 0.109559017
+DeepSdf - DEBUG - sdf_loss = 0.012963530, reg_loss = 2.113730306, pw_loss = 0.001113458, pp_loss = 0.023337225
+DeepSdf - DEBUG - sdf_loss = 0.012981102, reg_loss = 2.228045883, pw_loss = 0.001130690, pp_loss = 0.042247880
+DeepSdf - DEBUG - sdf_loss = 0.013030721, reg_loss = 2.158457520, pw_loss = 0.001253708, pp_loss = 0.055715581
+DeepSdf - INFO - epoch 31...
+DeepSdf - DEBUG - sdf_loss = 0.012980841, reg_loss = 2.197584127, pw_loss = 0.001259794, pp_loss = 0.068180527
+DeepSdf - DEBUG - sdf_loss = 0.012949429, reg_loss = 2.254008164, pw_loss = 0.001276705, pp_loss = 0.042193804
+DeepSdf - DEBUG - sdf_loss = 0.013013396, reg_loss = 2.152033755, pw_loss = 0.001051429, pp_loss = 0.016627699
+DeepSdf - DEBUG - sdf_loss = 0.013086544, reg_loss = 2.086424733, pw_loss = 0.001249749, pp_loss = 0.060425666
+DeepSdf - INFO - epoch 32...
+DeepSdf - DEBUG - sdf_loss = 0.012871025, reg_loss = 2.178555638, pw_loss = 0.001292282, pp_loss = 0.060462787
+DeepSdf - DEBUG - sdf_loss = 0.013041866, reg_loss = 2.205981605, pw_loss = 0.001156126, pp_loss = 0.027251675
+DeepSdf - DEBUG - sdf_loss = 0.012804070, reg_loss = 2.209050019, pw_loss = 0.001092916, pp_loss = 0.020859697
+DeepSdf - DEBUG - sdf_loss = 0.012912509, reg_loss = 2.133544224, pw_loss = 0.001238951, pp_loss = 0.040827892
+DeepSdf - INFO - epoch 33...
+DeepSdf - DEBUG - sdf_loss = 0.012548480, reg_loss = 2.202234065, pw_loss = 0.001143840, pp_loss = 0.033827775
+DeepSdf - DEBUG - sdf_loss = 0.012893999, reg_loss = 2.153004917, pw_loss = 0.001434363, pp_loss = 0.072103005
+DeepSdf - DEBUG - sdf_loss = 0.012546448, reg_loss = 2.195653958, pw_loss = 0.001349241, pp_loss = 0.052882618
+DeepSdf - DEBUG - sdf_loss = 0.012670849, reg_loss = 2.193316407, pw_loss = 0.001077053, pp_loss = 0.007994261
+DeepSdf - INFO - epoch 34...
+DeepSdf - DEBUG - sdf_loss = 0.012289606, reg_loss = 2.177113176, pw_loss = 0.001340007, pp_loss = 0.050135609
+DeepSdf - DEBUG - sdf_loss = 0.012300393, reg_loss = 2.189737258, pw_loss = 0.001093162, pp_loss = 0.011641523
+DeepSdf - DEBUG - sdf_loss = 0.012254041, reg_loss = 2.199550375, pw_loss = 0.001189820, pp_loss = 0.040107077
+DeepSdf - DEBUG - sdf_loss = 0.012235982, reg_loss = 2.174223556, pw_loss = 0.001209445, pp_loss = 0.043334909
+DeepSdf - INFO - epoch 35...
+DeepSdf - DEBUG - sdf_loss = 0.012488006, reg_loss = 2.265392721, pw_loss = 0.001189755, pp_loss = 0.022795840
+DeepSdf - DEBUG - sdf_loss = 0.012392508, reg_loss = 2.048752784, pw_loss = 0.001433637, pp_loss = 0.053573323
+DeepSdf - DEBUG - sdf_loss = 0.012183398, reg_loss = 2.184704396, pw_loss = 0.001236215, pp_loss = 0.028770328
+DeepSdf - DEBUG - sdf_loss = 0.012370393, reg_loss = 2.214179683, pw_loss = 0.001167996, pp_loss = 0.004073417
+DeepSdf - INFO - epoch 36...
+DeepSdf - DEBUG - sdf_loss = 0.012117434, reg_loss = 2.256744504, pw_loss = 0.001358046, pp_loss = 0.029478873
+DeepSdf - DEBUG - sdf_loss = 0.012136659, reg_loss = 2.098519277, pw_loss = 0.001391945, pp_loss = 0.013749905
+DeepSdf - DEBUG - sdf_loss = 0.012046528, reg_loss = 2.241970940, pw_loss = 0.001254500, pp_loss = 0.016143322
+DeepSdf - DEBUG - sdf_loss = 0.011894523, reg_loss = 2.136472538, pw_loss = 0.001089223, pp_loss = 0.004731857
+DeepSdf - INFO - epoch 37...
+DeepSdf - DEBUG - sdf_loss = 0.011893386, reg_loss = 2.158145018, pw_loss = 0.001375156, pp_loss = 0.024436694
+DeepSdf - DEBUG - sdf_loss = 0.011806162, reg_loss = 2.191081466, pw_loss = 0.001343717, pp_loss = 0.012837232
+DeepSdf - DEBUG - sdf_loss = 0.011705614, reg_loss = 2.167940868, pw_loss = 0.001288549, pp_loss = 0.028169208
+DeepSdf - DEBUG - sdf_loss = 0.011749787, reg_loss = 2.186800367, pw_loss = 0.001190186, pp_loss = 0.005997415
+DeepSdf - INFO - epoch 38...
+DeepSdf - DEBUG - sdf_loss = 0.011732475, reg_loss = 2.178669278, pw_loss = 0.001218765, pp_loss = 0.029312015
+DeepSdf - DEBUG - sdf_loss = 0.011608026, reg_loss = 2.174424719, pw_loss = 0.001309093, pp_loss = 0.041739763
+DeepSdf - DEBUG - sdf_loss = 0.011566586, reg_loss = 2.211096975, pw_loss = 0.001282883, pp_loss = 0.008435342
+DeepSdf - DEBUG - sdf_loss = 0.011446619, reg_loss = 2.164163737, pw_loss = 0.001227875, pp_loss = 0.007011721
+DeepSdf - INFO - epoch 39...
+DeepSdf - DEBUG - sdf_loss = 0.011348535, reg_loss = 2.162018775, pw_loss = 0.001209016, pp_loss = 0.005240929
+DeepSdf - DEBUG - sdf_loss = 0.011319474, reg_loss = 2.130029816, pw_loss = 0.001317552, pp_loss = 0.010237191
+DeepSdf - DEBUG - sdf_loss = 0.011318053, reg_loss = 2.237184019, pw_loss = 0.001279994, pp_loss = 0.007449883
+DeepSdf - DEBUG - sdf_loss = 0.011335263, reg_loss = 2.191799835, pw_loss = 0.001291439, pp_loss = 0.005132409
+DeepSdf - INFO - epoch 40...
+DeepSdf - DEBUG - sdf_loss = 0.011250485, reg_loss = 2.217463966, pw_loss = 0.001319495, pp_loss = 0.024444758
+DeepSdf - DEBUG - sdf_loss = 0.011193284, reg_loss = 2.131410750, pw_loss = 0.001245123, pp_loss = 0.005321401
+DeepSdf - DEBUG - sdf_loss = 0.011030468, reg_loss = 2.102838340, pw_loss = 0.001188560, pp_loss = 0.025321216
+DeepSdf - DEBUG - sdf_loss = 0.010957390, reg_loss = 2.251784213, pw_loss = 0.001417438, pp_loss = 0.033912471
+DeepSdf - INFO - epoch 41...
+DeepSdf - DEBUG - sdf_loss = 0.010946346, reg_loss = 2.241790694, pw_loss = 0.001127526, pp_loss = 0.010291255
+DeepSdf - DEBUG - sdf_loss = 0.010784180, reg_loss = 2.224471539, pw_loss = 0.001426777, pp_loss = 0.020812454
+DeepSdf - DEBUG - sdf_loss = 0.010747492, reg_loss = 2.135130452, pw_loss = 0.001309080, pp_loss = 0.002500852
+DeepSdf - DEBUG - sdf_loss = 0.010622824, reg_loss = 2.154269538, pw_loss = 0.001405086, pp_loss = 0.004873244
+DeepSdf - INFO - epoch 42...
+DeepSdf - DEBUG - sdf_loss = 0.010605288, reg_loss = 2.050893362, pw_loss = 0.001245332, pp_loss = 0.003026951
+DeepSdf - DEBUG - sdf_loss = 0.010601441, reg_loss = 2.219415373, pw_loss = 0.001227462, pp_loss = 0.001138376
+DeepSdf - DEBUG - sdf_loss = 0.010533159, reg_loss = 2.224649888, pw_loss = 0.001254339, pp_loss = 0.005861470
+DeepSdf - DEBUG - sdf_loss = 0.010653203, reg_loss = 2.220297224, pw_loss = 0.001420673, pp_loss = 0.013633523
+DeepSdf - INFO - epoch 43...
+DeepSdf - DEBUG - sdf_loss = 0.010698136, reg_loss = 2.247943457, pw_loss = 0.001340107, pp_loss = 0.010106306
+DeepSdf - DEBUG - sdf_loss = 0.010918069, reg_loss = 2.239645225, pw_loss = 0.001307603, pp_loss = 0.009612160
+DeepSdf - DEBUG - sdf_loss = 0.010572292, reg_loss = 2.126956559, pw_loss = 0.001261640, pp_loss = 0.022710337
+DeepSdf - DEBUG - sdf_loss = 0.010292953, reg_loss = 2.141364379, pw_loss = 0.001569402, pp_loss = 0.062479969
+DeepSdf - INFO - epoch 44...
+DeepSdf - DEBUG - sdf_loss = 0.010582684, reg_loss = 2.256385762, pw_loss = 0.001100815, pp_loss = 0.007084302
+DeepSdf - DEBUG - sdf_loss = 0.010876746, reg_loss = 2.189116530, pw_loss = 0.001541708, pp_loss = 0.013877137
+DeepSdf - DEBUG - sdf_loss = 0.010567723, reg_loss = 2.090896477, pw_loss = 0.001282184, pp_loss = 0.002071894
+DeepSdf - DEBUG - sdf_loss = 0.010185939, reg_loss = 2.221925456, pw_loss = 0.001419892, pp_loss = 0.002108401
+DeepSdf - INFO - epoch 45...
+DeepSdf - DEBUG - sdf_loss = 0.010761086, reg_loss = 2.169951818, pw_loss = 0.001541047, pp_loss = 0.007036035
+DeepSdf - DEBUG - sdf_loss = 0.010749095, reg_loss = 2.316307127, pw_loss = 0.001343487, pp_loss = 0.003806624
+DeepSdf - DEBUG - sdf_loss = 0.010008554, reg_loss = 2.137246365, pw_loss = 0.001419513, pp_loss = 0.002924306
+DeepSdf - DEBUG - sdf_loss = 0.010325320, reg_loss = 2.105138961, pw_loss = 0.001424571, pp_loss = 0.003291492
+DeepSdf - INFO - epoch 46...
+DeepSdf - DEBUG - sdf_loss = 0.010056251, reg_loss = 2.246024338, pw_loss = 0.001435122, pp_loss = 0.011174121
+DeepSdf - DEBUG - sdf_loss = 0.010180577, reg_loss = 2.122279292, pw_loss = 0.001536349, pp_loss = 0.041033684
+DeepSdf - DEBUG - sdf_loss = 0.010125773, reg_loss = 2.157687621, pw_loss = 0.001354455, pp_loss = 0.045561459
+DeepSdf - DEBUG - sdf_loss = 0.009814119, reg_loss = 2.208848164, pw_loss = 0.001583122, pp_loss = 0.064116493
+DeepSdf - INFO - epoch 47...
+DeepSdf - DEBUG - sdf_loss = 0.010209132, reg_loss = 2.226735075, pw_loss = 0.001791110, pp_loss = 0.105149084
+DeepSdf - DEBUG - sdf_loss = 0.009734347, reg_loss = 2.117335849, pw_loss = 0.001535763, pp_loss = 0.031009084
+DeepSdf - DEBUG - sdf_loss = 0.009895728, reg_loss = 2.226820638, pw_loss = 0.001261701, pp_loss = 0.019832756
+DeepSdf - DEBUG - sdf_loss = 0.009738755, reg_loss = 2.165677943, pw_loss = 0.001402339, pp_loss = 0.019449564
+DeepSdf - INFO - epoch 48...
+DeepSdf - DEBUG - sdf_loss = 0.009641214, reg_loss = 2.153625476, pw_loss = 0.001295882, pp_loss = 0.003143110
+DeepSdf - DEBUG - sdf_loss = 0.009934059, reg_loss = 2.111710995, pw_loss = 0.001378517, pp_loss = 0.030326789
+DeepSdf - DEBUG - sdf_loss = 0.009585310, reg_loss = 2.123586929, pw_loss = 0.001578136, pp_loss = 0.010569728
+DeepSdf - DEBUG - sdf_loss = 0.009544550, reg_loss = 2.318686299, pw_loss = 0.001387476, pp_loss = 0.003708024
+DeepSdf - INFO - epoch 49...
+DeepSdf - DEBUG - sdf_loss = 0.009506405, reg_loss = 2.180063863, pw_loss = 0.001418026, pp_loss = 0.003899698
+DeepSdf - DEBUG - sdf_loss = 0.009423189, reg_loss = 2.340543198, pw_loss = 0.001437076, pp_loss = 0.006247746
+DeepSdf - DEBUG - sdf_loss = 0.009291304, reg_loss = 2.109920648, pw_loss = 0.001338786, pp_loss = 0.003894391
+DeepSdf - DEBUG - sdf_loss = 0.009522671, reg_loss = 2.125959058, pw_loss = 0.001195159, pp_loss = 0.008949060
+DeepSdf - INFO - epoch 50...
+DeepSdf - DEBUG - sdf_loss = 0.009095798, reg_loss = 2.287046408, pw_loss = 0.001467207, pp_loss = 0.016467667
+DeepSdf - DEBUG - sdf_loss = 0.009294162, reg_loss = 2.143824050, pw_loss = 0.001283095, pp_loss = 0.006919232
+DeepSdf - DEBUG - sdf_loss = 0.009192603, reg_loss = 2.251759466, pw_loss = 0.001343934, pp_loss = 0.043069901
+DeepSdf - DEBUG - sdf_loss = 0.009061999, reg_loss = 2.025066023, pw_loss = 0.001475329, pp_loss = 0.008254972
+DeepSdf - INFO - epoch 51...
+DeepSdf - DEBUG - sdf_loss = 0.008946047, reg_loss = 2.162134016, pw_loss = 0.001458216, pp_loss = 0.019146643
+DeepSdf - DEBUG - sdf_loss = 0.009304050, reg_loss = 2.186034972, pw_loss = 0.001500998, pp_loss = 0.012987246
+DeepSdf - DEBUG - sdf_loss = 0.009004070, reg_loss = 2.177529769, pw_loss = 0.001356379, pp_loss = 0.011778584
+DeepSdf - DEBUG - sdf_loss = 0.009057150, reg_loss = 2.231531418, pw_loss = 0.001412636, pp_loss = 0.011726515
+DeepSdf - INFO - epoch 52...
+DeepSdf - DEBUG - sdf_loss = 0.008795490, reg_loss = 2.207044682, pw_loss = 0.001335932, pp_loss = 0.006950443
+DeepSdf - DEBUG - sdf_loss = 0.008851548, reg_loss = 2.210878754, pw_loss = 0.001319628, pp_loss = 0.005879615
+DeepSdf - DEBUG - sdf_loss = 0.008790648, reg_loss = 2.122175297, pw_loss = 0.001327021, pp_loss = 0.002697892
+DeepSdf - DEBUG - sdf_loss = 0.008850616, reg_loss = 2.209843094, pw_loss = 0.001473178, pp_loss = 0.008566232
+DeepSdf - INFO - epoch 53...
+DeepSdf - DEBUG - sdf_loss = 0.008848363, reg_loss = 2.230657623, pw_loss = 0.001511411, pp_loss = 0.020069793
+DeepSdf - DEBUG - sdf_loss = 0.008736784, reg_loss = 2.133310564, pw_loss = 0.001328985, pp_loss = 0.006729278
+DeepSdf - DEBUG - sdf_loss = 0.008562451, reg_loss = 2.170728118, pw_loss = 0.001475521, pp_loss = 0.014517841
+DeepSdf - DEBUG - sdf_loss = 0.008744531, reg_loss = 2.166483485, pw_loss = 0.001199768, pp_loss = 0.001769659
+DeepSdf - INFO - epoch 54...
+DeepSdf - DEBUG - sdf_loss = 0.008713419, reg_loss = 2.222472347, pw_loss = 0.001295889, pp_loss = 0.006978569
+DeepSdf - DEBUG - sdf_loss = 0.008544061, reg_loss = 2.151214330, pw_loss = 0.001345763, pp_loss = 0.010038811
+DeepSdf - DEBUG - sdf_loss = 0.008430865, reg_loss = 2.192147605, pw_loss = 0.001460513, pp_loss = 0.021828640
+DeepSdf - DEBUG - sdf_loss = 0.008448377, reg_loss = 2.168500398, pw_loss = 0.001573454, pp_loss = 0.045057798
+DeepSdf - INFO - epoch 55...
+DeepSdf - DEBUG - sdf_loss = 0.008396947, reg_loss = 2.200867645, pw_loss = 0.001591132, pp_loss = 0.021209219
+DeepSdf - DEBUG - sdf_loss = 0.008310623, reg_loss = 2.213379766, pw_loss = 0.001595671, pp_loss = 0.025281664
+DeepSdf - DEBUG - sdf_loss = 0.008534710, reg_loss = 2.198663504, pw_loss = 0.001235515, pp_loss = 0.008510292
+DeepSdf - DEBUG - sdf_loss = 0.008254832, reg_loss = 2.081616851, pw_loss = 0.001310895, pp_loss = 0.003512800
+DeepSdf - INFO - epoch 56...
+DeepSdf - DEBUG - sdf_loss = 0.008449820, reg_loss = 2.255154506, pw_loss = 0.001398825, pp_loss = 0.007200764
+DeepSdf - DEBUG - sdf_loss = 0.008374171, reg_loss = 2.229099109, pw_loss = 0.001254876, pp_loss = 0.001691735
+DeepSdf - DEBUG - sdf_loss = 0.008244719, reg_loss = 2.108926685, pw_loss = 0.001542828, pp_loss = 0.009550739
+DeepSdf - DEBUG - sdf_loss = 0.008204971, reg_loss = 2.187251874, pw_loss = 0.001566753, pp_loss = 0.011391956
+DeepSdf - INFO - epoch 57...
+DeepSdf - DEBUG - sdf_loss = 0.008409590, reg_loss = 2.146236297, pw_loss = 0.001567940, pp_loss = 0.011588271
+DeepSdf - DEBUG - sdf_loss = 0.008317973, reg_loss = 2.288056778, pw_loss = 0.001621476, pp_loss = 0.028289417
+DeepSdf - DEBUG - sdf_loss = 0.008055795, reg_loss = 2.188339390, pw_loss = 0.001422583, pp_loss = 0.009362515
+DeepSdf - DEBUG - sdf_loss = 0.007870998, reg_loss = 2.093935059, pw_loss = 0.001400549, pp_loss = 0.005995024
+DeepSdf - INFO - epoch 58...
+DeepSdf - DEBUG - sdf_loss = 0.008109087, reg_loss = 2.170097170, pw_loss = 0.001570798, pp_loss = 0.023602742
+DeepSdf - DEBUG - sdf_loss = 0.008194890, reg_loss = 2.158746797, pw_loss = 0.001371521, pp_loss = 0.010772841
+DeepSdf - DEBUG - sdf_loss = 0.007985767, reg_loss = 2.208696385, pw_loss = 0.001616054, pp_loss = 0.018590647
+DeepSdf - DEBUG - sdf_loss = 0.008043093, reg_loss = 2.180004408, pw_loss = 0.001319504, pp_loss = 0.004221526
+DeepSdf - INFO - epoch 59...
+DeepSdf - DEBUG - sdf_loss = 0.008057183, reg_loss = 2.188045855, pw_loss = 0.001505981, pp_loss = 0.009623215
+DeepSdf - DEBUG - sdf_loss = 0.008401075, reg_loss = 2.093336006, pw_loss = 0.001738699, pp_loss = 0.023598449
+DeepSdf - DEBUG - sdf_loss = 0.008199615, reg_loss = 2.199576285, pw_loss = 0.001307334, pp_loss = 0.007305330
+DeepSdf - DEBUG - sdf_loss = 0.007941302, reg_loss = 2.183226289, pw_loss = 0.001419949, pp_loss = 0.006962467
+DeepSdf - INFO - epoch 60...
+DeepSdf - DEBUG - sdf_loss = 0.008170786, reg_loss = 2.174533202, pw_loss = 0.001516387, pp_loss = 0.017111751
+DeepSdf - DEBUG - sdf_loss = 0.007851106, reg_loss = 2.151269391, pw_loss = 0.001521344, pp_loss = 0.006599678
+DeepSdf - DEBUG - sdf_loss = 0.007896458, reg_loss = 2.165096463, pw_loss = 0.001480410, pp_loss = 0.015161942
+DeepSdf - DEBUG - sdf_loss = 0.007668659, reg_loss = 2.217257660, pw_loss = 0.001558252, pp_loss = 0.023341767
+DeepSdf - INFO - epoch 61...
+DeepSdf - DEBUG - sdf_loss = 0.007938970, reg_loss = 2.173933104, pw_loss = 0.001578140, pp_loss = 0.022637783
+DeepSdf - DEBUG - sdf_loss = 0.007920189, reg_loss = 2.150498814, pw_loss = 0.001497759, pp_loss = 0.015767798
+DeepSdf - DEBUG - sdf_loss = 0.007941472, reg_loss = 2.173377320, pw_loss = 0.001759873, pp_loss = 0.070631758
+DeepSdf - DEBUG - sdf_loss = 0.007943304, reg_loss = 2.198587293, pw_loss = 0.001522783, pp_loss = 0.024981239
+DeepSdf - INFO - epoch 62...
+DeepSdf - DEBUG - sdf_loss = 0.008003544, reg_loss = 2.143441838, pw_loss = 0.001314873, pp_loss = 0.011418290
+DeepSdf - DEBUG - sdf_loss = 0.007899801, reg_loss = 2.178490652, pw_loss = 0.001836811, pp_loss = 0.071983844
+DeepSdf - DEBUG - sdf_loss = 0.007743015, reg_loss = 2.199684163, pw_loss = 0.001636486, pp_loss = 0.013011043
+DeepSdf - DEBUG - sdf_loss = 0.007804498, reg_loss = 2.174317430, pw_loss = 0.001694513, pp_loss = 0.027675482
+DeepSdf - INFO - epoch 63...
+DeepSdf - DEBUG - sdf_loss = 0.007597754, reg_loss = 2.172327531, pw_loss = 0.001576967, pp_loss = 0.022066168
+DeepSdf - DEBUG - sdf_loss = 0.007613865, reg_loss = 2.198493080, pw_loss = 0.001579288, pp_loss = 0.010533098
+DeepSdf - DEBUG - sdf_loss = 0.007925489, reg_loss = 2.152971398, pw_loss = 0.001473572, pp_loss = 0.009402586
+DeepSdf - DEBUG - sdf_loss = 0.007617402, reg_loss = 2.215827071, pw_loss = 0.001598481, pp_loss = 0.014608609
+DeepSdf - INFO - epoch 64...
+DeepSdf - DEBUG - sdf_loss = 0.007519322, reg_loss = 2.275651387, pw_loss = 0.001564854, pp_loss = 0.010079455
+DeepSdf - DEBUG - sdf_loss = 0.007774360, reg_loss = 2.166150079, pw_loss = 0.001671699, pp_loss = 0.011396846
+DeepSdf - DEBUG - sdf_loss = 0.007174445, reg_loss = 2.090921108, pw_loss = 0.001453487, pp_loss = 0.008233390
+DeepSdf - DEBUG - sdf_loss = 0.007439465, reg_loss = 2.182306659, pw_loss = 0.001661335, pp_loss = 0.016959487
+DeepSdf - INFO - epoch 65...
+DeepSdf - DEBUG - sdf_loss = 0.007605806, reg_loss = 2.273487986, pw_loss = 0.001605998, pp_loss = 0.030192157
+DeepSdf - DEBUG - sdf_loss = 0.007423560, reg_loss = 2.135124178, pw_loss = 0.001672499, pp_loss = 0.012444723
+DeepSdf - DEBUG - sdf_loss = 0.007279133, reg_loss = 2.203967177, pw_loss = 0.001386181, pp_loss = 0.013462190
+DeepSdf - DEBUG - sdf_loss = 0.007430472, reg_loss = 2.082965340, pw_loss = 0.001778718, pp_loss = 0.039877407
+DeepSdf - INFO - epoch 66...
+DeepSdf - DEBUG - sdf_loss = 0.007247356, reg_loss = 2.220756355, pw_loss = 0.001654936, pp_loss = 0.010361439
+DeepSdf - DEBUG - sdf_loss = 0.007457891, reg_loss = 2.187833997, pw_loss = 0.001869846, pp_loss = 0.045736562
+DeepSdf - DEBUG - sdf_loss = 0.007219074, reg_loss = 2.196446593, pw_loss = 0.001455637, pp_loss = 0.020309605
+DeepSdf - DEBUG - sdf_loss = 0.007292022, reg_loss = 2.112942719, pw_loss = 0.001434643, pp_loss = 0.006893604
+DeepSdf - INFO - epoch 67...
+DeepSdf - DEBUG - sdf_loss = 0.007093610, reg_loss = 2.108245737, pw_loss = 0.001361632, pp_loss = 0.005812152
+DeepSdf - DEBUG - sdf_loss = 0.007076430, reg_loss = 2.204743247, pw_loss = 0.001609103, pp_loss = 0.009259304
+DeepSdf - DEBUG - sdf_loss = 0.007298477, reg_loss = 2.283255081, pw_loss = 0.001832757, pp_loss = 0.014527641
+DeepSdf - DEBUG - sdf_loss = 0.007132098, reg_loss = 2.149589631, pw_loss = 0.001428497, pp_loss = 0.002392894
+DeepSdf - INFO - epoch 68...
+DeepSdf - DEBUG - sdf_loss = 0.007118999, reg_loss = 2.119516670, pw_loss = 0.001453100, pp_loss = 0.007439490
+DeepSdf - DEBUG - sdf_loss = 0.007119052, reg_loss = 2.204528790, pw_loss = 0.001517974, pp_loss = 0.018411175
+DeepSdf - DEBUG - sdf_loss = 0.007022475, reg_loss = 2.208579620, pw_loss = 0.001668542, pp_loss = 0.022645293
+DeepSdf - DEBUG - sdf_loss = 0.007070158, reg_loss = 2.206925891, pw_loss = 0.001773500, pp_loss = 0.034352774
+DeepSdf - INFO - epoch 69...
+DeepSdf - DEBUG - sdf_loss = 0.007022443, reg_loss = 2.124531133, pw_loss = 0.001463991, pp_loss = 0.009175056
+DeepSdf - DEBUG - sdf_loss = 0.007071146, reg_loss = 2.242062069, pw_loss = 0.001819312, pp_loss = 0.085023195
+DeepSdf - DEBUG - sdf_loss = 0.007191363, reg_loss = 2.088542482, pw_loss = 0.001454371, pp_loss = 0.022174624
+DeepSdf - DEBUG - sdf_loss = 0.006930402, reg_loss = 2.229962829, pw_loss = 0.001813077, pp_loss = 0.006851529
+DeepSdf - INFO - epoch 70...
+DeepSdf - DEBUG - sdf_loss = 0.007063911, reg_loss = 2.148520035, pw_loss = 0.001516905, pp_loss = 0.020881488
+DeepSdf - DEBUG - sdf_loss = 0.006995029, reg_loss = 2.239637710, pw_loss = 0.001770327, pp_loss = 0.028603229
+DeepSdf - DEBUG - sdf_loss = 0.007101594, reg_loss = 2.246317512, pw_loss = 0.001477210, pp_loss = 0.011777126
+DeepSdf - DEBUG - sdf_loss = 0.006859947, reg_loss = 2.106138638, pw_loss = 0.001632359, pp_loss = 0.004850569
+DeepSdf - INFO - epoch 71...
+DeepSdf - DEBUG - sdf_loss = 0.006961001, reg_loss = 2.144896199, pw_loss = 0.001665573, pp_loss = 0.010665294
+DeepSdf - DEBUG - sdf_loss = 0.006873979, reg_loss = 2.213723678, pw_loss = 0.001770266, pp_loss = 0.007092349
+DeepSdf - DEBUG - sdf_loss = 0.007013934, reg_loss = 2.157266053, pw_loss = 0.001542464, pp_loss = 0.013735065
+DeepSdf - DEBUG - sdf_loss = 0.006989458, reg_loss = 2.211446909, pw_loss = 0.001463260, pp_loss = 0.004198628
+DeepSdf - INFO - epoch 72...
+DeepSdf - DEBUG - sdf_loss = 0.006844624, reg_loss = 2.253270260, pw_loss = 0.001660393, pp_loss = 0.023448257
+DeepSdf - DEBUG - sdf_loss = 0.006692050, reg_loss = 2.176667141, pw_loss = 0.001599683, pp_loss = 0.003502275
+DeepSdf - DEBUG - sdf_loss = 0.007153388, reg_loss = 2.193973063, pw_loss = 0.001790345, pp_loss = 0.018854392
+DeepSdf - DEBUG - sdf_loss = 0.006629522, reg_loss = 2.119314576, pw_loss = 0.001715816, pp_loss = 0.011409773
+DeepSdf - INFO - epoch 73...
+DeepSdf - DEBUG - sdf_loss = 0.007003242, reg_loss = 2.134605513, pw_loss = 0.001850163, pp_loss = 0.035789465
+DeepSdf - DEBUG - sdf_loss = 0.006573518, reg_loss = 2.114092364, pw_loss = 0.001603834, pp_loss = 0.009373693
+DeepSdf - DEBUG - sdf_loss = 0.007139956, reg_loss = 2.315604729, pw_loss = 0.001897271, pp_loss = 0.037281950
+DeepSdf - DEBUG - sdf_loss = 0.006698561, reg_loss = 2.132040411, pw_loss = 0.001603532, pp_loss = 0.014102495
+DeepSdf - INFO - epoch 74...
+DeepSdf - DEBUG - sdf_loss = 0.006762943, reg_loss = 2.244124675, pw_loss = 0.001928040, pp_loss = 0.047177389
+DeepSdf - DEBUG - sdf_loss = 0.006578838, reg_loss = 2.156606638, pw_loss = 0.001671392, pp_loss = 0.007596443
+DeepSdf - DEBUG - sdf_loss = 0.006706044, reg_loss = 2.165897340, pw_loss = 0.001574813, pp_loss = 0.006302180
+DeepSdf - DEBUG - sdf_loss = 0.006691579, reg_loss = 2.170663797, pw_loss = 0.001650900, pp_loss = 0.008915429
+DeepSdf - INFO - epoch 75...
+DeepSdf - DEBUG - sdf_loss = 0.006656428, reg_loss = 2.203082955, pw_loss = 0.001682796, pp_loss = 0.002096217
+DeepSdf - DEBUG - sdf_loss = 0.006386569, reg_loss = 2.148804881, pw_loss = 0.001735396, pp_loss = 0.017434867
+DeepSdf - DEBUG - sdf_loss = 0.006635357, reg_loss = 2.234686334, pw_loss = 0.001728111, pp_loss = 0.016560814
+DeepSdf - DEBUG - sdf_loss = 0.006405646, reg_loss = 2.135340345, pw_loss = 0.001796948, pp_loss = 0.019915672
+DeepSdf - INFO - epoch 76...
+DeepSdf - DEBUG - sdf_loss = 0.006560456, reg_loss = 2.200764647, pw_loss = 0.001663084, pp_loss = 0.016313699
+DeepSdf - DEBUG - sdf_loss = 0.006418231, reg_loss = 2.099073435, pw_loss = 0.001721125, pp_loss = 0.015523130
+DeepSdf - DEBUG - sdf_loss = 0.006321640, reg_loss = 2.241188011, pw_loss = 0.001934058, pp_loss = 0.013687936
+DeepSdf - DEBUG - sdf_loss = 0.006401604, reg_loss = 2.194642791, pw_loss = 0.001580860, pp_loss = 0.011830732
+DeepSdf - INFO - epoch 77...
+DeepSdf - DEBUG - sdf_loss = 0.006301342, reg_loss = 2.199125008, pw_loss = 0.001775305, pp_loss = 0.006821747
+DeepSdf - DEBUG - sdf_loss = 0.006221184, reg_loss = 2.148460292, pw_loss = 0.001821458, pp_loss = 0.019853695
+DeepSdf - DEBUG - sdf_loss = 0.006381489, reg_loss = 2.192949050, pw_loss = 0.001587841, pp_loss = 0.013738634
+DeepSdf - DEBUG - sdf_loss = 0.006241479, reg_loss = 2.157848834, pw_loss = 0.001880795, pp_loss = 0.037795253
+DeepSdf - INFO - epoch 78...
+DeepSdf - DEBUG - sdf_loss = 0.006209101, reg_loss = 2.133670443, pw_loss = 0.001716681, pp_loss = 0.004392292
+DeepSdf - DEBUG - sdf_loss = 0.006343753, reg_loss = 2.179903855, pw_loss = 0.001936488, pp_loss = 0.046336791
+DeepSdf - DEBUG - sdf_loss = 0.006214793, reg_loss = 2.204340668, pw_loss = 0.001782445, pp_loss = 0.006689686
+DeepSdf - DEBUG - sdf_loss = 0.006298033, reg_loss = 2.182760993, pw_loss = 0.001746644, pp_loss = 0.013467188
+DeepSdf - INFO - epoch 79...
+DeepSdf - DEBUG - sdf_loss = 0.006226230, reg_loss = 2.144265559, pw_loss = 0.001771481, pp_loss = 0.018626821
+DeepSdf - DEBUG - sdf_loss = 0.006198033, reg_loss = 2.132256238, pw_loss = 0.001904623, pp_loss = 0.021670037
+DeepSdf - DEBUG - sdf_loss = 0.006269443, reg_loss = 2.291607150, pw_loss = 0.001754943, pp_loss = 0.012419321
+DeepSdf - DEBUG - sdf_loss = 0.006200742, reg_loss = 2.165618925, pw_loss = 0.001836538, pp_loss = 0.020668168
+DeepSdf - INFO - epoch 80...
+DeepSdf - DEBUG - sdf_loss = 0.006041038, reg_loss = 2.169313588, pw_loss = 0.002053911, pp_loss = 0.047950524
+DeepSdf - DEBUG - sdf_loss = 0.006124390, reg_loss = 2.183477821, pw_loss = 0.001928793, pp_loss = 0.056563839
+DeepSdf - DEBUG - sdf_loss = 0.006066011, reg_loss = 2.174089741, pw_loss = 0.001852735, pp_loss = 0.018375446
+DeepSdf - DEBUG - sdf_loss = 0.006187561, reg_loss = 2.177187422, pw_loss = 0.001624973, pp_loss = 0.028439101
+DeepSdf - INFO - epoch 81...
+DeepSdf - DEBUG - sdf_loss = 0.006039798, reg_loss = 2.178951793, pw_loss = 0.001903631, pp_loss = 0.027807488
+DeepSdf - DEBUG - sdf_loss = 0.006046226, reg_loss = 2.084030547, pw_loss = 0.001803578, pp_loss = 0.006559819
+DeepSdf - DEBUG - sdf_loss = 0.006104189, reg_loss = 2.272588611, pw_loss = 0.001839860, pp_loss = 0.014664983
+DeepSdf - DEBUG - sdf_loss = 0.005934250, reg_loss = 2.133536387, pw_loss = 0.001783917, pp_loss = 0.008117590
+DeepSdf - INFO - epoch 82...
+DeepSdf - DEBUG - sdf_loss = 0.006203993, reg_loss = 2.248486709, pw_loss = 0.001678780, pp_loss = 0.007945494
+DeepSdf - DEBUG - sdf_loss = 0.005990448, reg_loss = 2.151876214, pw_loss = 0.001989625, pp_loss = 0.034369822
+DeepSdf - DEBUG - sdf_loss = 0.006039135, reg_loss = 2.114187633, pw_loss = 0.001931772, pp_loss = 0.010766231
+DeepSdf - DEBUG - sdf_loss = 0.005999110, reg_loss = 2.171781436, pw_loss = 0.001926130, pp_loss = 0.040681322
+DeepSdf - INFO - epoch 83...
+DeepSdf - DEBUG - sdf_loss = 0.006036792, reg_loss = 2.163337561, pw_loss = 0.002259234, pp_loss = 0.092186779
+DeepSdf - DEBUG - sdf_loss = 0.005987147, reg_loss = 2.261378350, pw_loss = 0.001909521, pp_loss = 0.013634590
+DeepSdf - DEBUG - sdf_loss = 0.006088132, reg_loss = 2.113272935, pw_loss = 0.001819418, pp_loss = 0.012902350
+DeepSdf - DEBUG - sdf_loss = 0.006113447, reg_loss = 2.174702145, pw_loss = 0.001750957, pp_loss = 0.011122332
+DeepSdf - INFO - epoch 84...
+DeepSdf - DEBUG - sdf_loss = 0.006117288, reg_loss = 2.210593707, pw_loss = 0.001960982, pp_loss = 0.009938966
+DeepSdf - DEBUG - sdf_loss = 0.006006005, reg_loss = 2.166811594, pw_loss = 0.001933721, pp_loss = 0.014813725
+DeepSdf - DEBUG - sdf_loss = 0.006136875, reg_loss = 2.136971580, pw_loss = 0.001806516, pp_loss = 0.009159257
+DeepSdf - DEBUG - sdf_loss = 0.005900816, reg_loss = 2.166819290, pw_loss = 0.001831231, pp_loss = 0.014108826
+DeepSdf - INFO - epoch 85...
+DeepSdf - DEBUG - sdf_loss = 0.006162358, reg_loss = 2.198688757, pw_loss = 0.002051229, pp_loss = 0.041007121
+DeepSdf - DEBUG - sdf_loss = 0.006020884, reg_loss = 2.125639705, pw_loss = 0.001795966, pp_loss = 0.014335998
+DeepSdf - DEBUG - sdf_loss = 0.005976924, reg_loss = 2.233951608, pw_loss = 0.002076400, pp_loss = 0.045412532
+DeepSdf - DEBUG - sdf_loss = 0.005744502, reg_loss = 2.156029098, pw_loss = 0.002167951, pp_loss = 0.044002941
+DeepSdf - INFO - epoch 86...
+DeepSdf - DEBUG - sdf_loss = 0.005801319, reg_loss = 2.266648791, pw_loss = 0.002098292, pp_loss = 0.021823249
+DeepSdf - DEBUG - sdf_loss = 0.005874567, reg_loss = 2.189359765, pw_loss = 0.001921716, pp_loss = 0.053579445
+DeepSdf - DEBUG - sdf_loss = 0.005877576, reg_loss = 2.110339561, pw_loss = 0.001856773, pp_loss = 0.032291789
+DeepSdf - DEBUG - sdf_loss = 0.005786051, reg_loss = 2.178163332, pw_loss = 0.001980808, pp_loss = 0.027639903
+DeepSdf - INFO - epoch 87...
+DeepSdf - DEBUG - sdf_loss = 0.005886234, reg_loss = 2.186405811, pw_loss = 0.002031217, pp_loss = 0.036995244
+DeepSdf - DEBUG - sdf_loss = 0.005834858, reg_loss = 2.134331594, pw_loss = 0.002079360, pp_loss = 0.033276226
+DeepSdf - DEBUG - sdf_loss = 0.005757627, reg_loss = 2.268292188, pw_loss = 0.001957960, pp_loss = 0.010974783
+DeepSdf - DEBUG - sdf_loss = 0.005794026, reg_loss = 2.180647786, pw_loss = 0.002154841, pp_loss = 0.036117349
+DeepSdf - INFO - epoch 88...
+DeepSdf - DEBUG - sdf_loss = 0.005892659, reg_loss = 2.272766050, pw_loss = 0.002050721, pp_loss = 0.034467977
+DeepSdf - DEBUG - sdf_loss = 0.005753982, reg_loss = 2.125209694, pw_loss = 0.002296155, pp_loss = 0.053857331
+DeepSdf - DEBUG - sdf_loss = 0.005793057, reg_loss = 2.201964237, pw_loss = 0.001961511, pp_loss = 0.020901158
+DeepSdf - DEBUG - sdf_loss = 0.005645058, reg_loss = 2.125288061, pw_loss = 0.002092701, pp_loss = 0.018325355
+DeepSdf - INFO - epoch 89...
+DeepSdf - DEBUG - sdf_loss = 0.005736564, reg_loss = 2.158892847, pw_loss = 0.002129037, pp_loss = 0.022276663
+DeepSdf - DEBUG - sdf_loss = 0.005756896, reg_loss = 2.176170394, pw_loss = 0.002013710, pp_loss = 0.060042635
+DeepSdf - DEBUG - sdf_loss = 0.005784700, reg_loss = 2.095331315, pw_loss = 0.002320505, pp_loss = 0.088494679
+DeepSdf - DEBUG - sdf_loss = 0.005839834, reg_loss = 2.265873060, pw_loss = 0.002102156, pp_loss = 0.060090992
+DeepSdf - INFO - epoch 90...
+DeepSdf - DEBUG - sdf_loss = 0.005898956, reg_loss = 2.171467558, pw_loss = 0.002365281, pp_loss = 0.070033167
+DeepSdf - DEBUG - sdf_loss = 0.005649184, reg_loss = 2.240838667, pw_loss = 0.002241126, pp_loss = 0.033199533
+DeepSdf - DEBUG - sdf_loss = 0.005719382, reg_loss = 2.136107276, pw_loss = 0.001997853, pp_loss = 0.013447012
+DeepSdf - DEBUG - sdf_loss = 0.005759012, reg_loss = 2.113068407, pw_loss = 0.002001964, pp_loss = 0.011591101
+DeepSdf - INFO - epoch 91...
+DeepSdf - DEBUG - sdf_loss = 0.005668753, reg_loss = 2.185247058, pw_loss = 0.002135531, pp_loss = 0.022933962
+DeepSdf - DEBUG - sdf_loss = 0.005698437, reg_loss = 2.233663527, pw_loss = 0.001946864, pp_loss = 0.043805684
+DeepSdf - DEBUG - sdf_loss = 0.005878248, reg_loss = 2.268672694, pw_loss = 0.002508015, pp_loss = 0.091951310
+DeepSdf - DEBUG - sdf_loss = 0.005417073, reg_loss = 2.045309683, pw_loss = 0.002199785, pp_loss = 0.034732412
+DeepSdf - INFO - epoch 92...
+DeepSdf - DEBUG - sdf_loss = 0.005785953, reg_loss = 2.211932840, pw_loss = 0.002270778, pp_loss = 0.115226726
+DeepSdf - DEBUG - sdf_loss = 0.005661422, reg_loss = 2.272170862, pw_loss = 0.002099926, pp_loss = 0.067920910
+DeepSdf - DEBUG - sdf_loss = 0.005587142, reg_loss = 2.056526401, pw_loss = 0.002256336, pp_loss = 0.059758840
+DeepSdf - DEBUG - sdf_loss = 0.005544816, reg_loss = 2.188654892, pw_loss = 0.002207532, pp_loss = 0.024410090
+DeepSdf - INFO - epoch 93...
+DeepSdf - DEBUG - sdf_loss = 0.005540859, reg_loss = 2.200845538, pw_loss = 0.001848851, pp_loss = 0.011648674
+DeepSdf - DEBUG - sdf_loss = 0.005501662, reg_loss = 2.076401766, pw_loss = 0.002290923, pp_loss = 0.017936954
+DeepSdf - DEBUG - sdf_loss = 0.005694000, reg_loss = 2.225807098, pw_loss = 0.002148895, pp_loss = 0.047716864
+DeepSdf - DEBUG - sdf_loss = 0.005554376, reg_loss = 2.221764207, pw_loss = 0.002319396, pp_loss = 0.019358796
+DeepSdf - INFO - epoch 94...
+DeepSdf - DEBUG - sdf_loss = 0.005450541, reg_loss = 2.174425185, pw_loss = 0.002255947, pp_loss = 0.028259029
+DeepSdf - DEBUG - sdf_loss = 0.005626581, reg_loss = 2.242058673, pw_loss = 0.002470100, pp_loss = 0.147885471
+DeepSdf - DEBUG - sdf_loss = 0.005551018, reg_loss = 2.117215942, pw_loss = 0.002256082, pp_loss = 0.113249694
+DeepSdf - DEBUG - sdf_loss = 0.005469765, reg_loss = 2.182549287, pw_loss = 0.002120184, pp_loss = 0.017937941
+DeepSdf - INFO - epoch 95...
+DeepSdf - DEBUG - sdf_loss = 0.005736827, reg_loss = 2.178376401, pw_loss = 0.002187656, pp_loss = 0.062496757
+DeepSdf - DEBUG - sdf_loss = 0.005546132, reg_loss = 2.163803684, pw_loss = 0.002189376, pp_loss = 0.024720480
+DeepSdf - DEBUG - sdf_loss = 0.005591219, reg_loss = 2.253901647, pw_loss = 0.002167530, pp_loss = 0.032929716
+DeepSdf - DEBUG - sdf_loss = 0.005267589, reg_loss = 2.169716399, pw_loss = 0.002511365, pp_loss = 0.039923026
+DeepSdf - INFO - epoch 96...
+DeepSdf - DEBUG - sdf_loss = 0.005546591, reg_loss = 2.168605096, pw_loss = 0.002101749, pp_loss = 0.017511549
+DeepSdf - DEBUG - sdf_loss = 0.005488327, reg_loss = 2.215852640, pw_loss = 0.002260435, pp_loss = 0.017392330
+DeepSdf - DEBUG - sdf_loss = 0.005476151, reg_loss = 2.222450012, pw_loss = 0.002664124, pp_loss = 0.061286985
+DeepSdf - DEBUG - sdf_loss = 0.005612305, reg_loss = 2.168244773, pw_loss = 0.002094382, pp_loss = 0.026109472
+DeepSdf - INFO - epoch 97...
+DeepSdf - DEBUG - sdf_loss = 0.005598439, reg_loss = 2.226094911, pw_loss = 0.002422155, pp_loss = 0.057722545
+DeepSdf - DEBUG - sdf_loss = 0.005586827, reg_loss = 2.163531448, pw_loss = 0.002156846, pp_loss = 0.023651477
+DeepSdf - DEBUG - sdf_loss = 0.005557907, reg_loss = 2.133198644, pw_loss = 0.002078916, pp_loss = 0.018991199
+DeepSdf - DEBUG - sdf_loss = 0.005358986, reg_loss = 2.196238121, pw_loss = 0.002502760, pp_loss = 0.090010998
+DeepSdf - INFO - epoch 98...
+DeepSdf - DEBUG - sdf_loss = 0.005660311, reg_loss = 2.189693616, pw_loss = 0.002490483, pp_loss = 0.084800567
+DeepSdf - DEBUG - sdf_loss = 0.005396108, reg_loss = 2.201542262, pw_loss = 0.002237108, pp_loss = 0.018627765
+DeepSdf - DEBUG - sdf_loss = 0.005551355, reg_loss = 2.186879047, pw_loss = 0.002178897, pp_loss = 0.097223088
+DeepSdf - DEBUG - sdf_loss = 0.005452982, reg_loss = 2.159443736, pw_loss = 0.002467132, pp_loss = 0.041679833
+DeepSdf - INFO - epoch 99...
+DeepSdf - DEBUG - sdf_loss = 0.005512687, reg_loss = 2.210544493, pw_loss = 0.002404605, pp_loss = 0.016928739
+DeepSdf - DEBUG - sdf_loss = 0.005341028, reg_loss = 2.246577358, pw_loss = 0.002048527, pp_loss = 0.014847282
+DeepSdf - DEBUG - sdf_loss = 0.005381448, reg_loss = 2.161087647, pw_loss = 0.002294566, pp_loss = 0.018523155
+DeepSdf - DEBUG - sdf_loss = 0.005320100, reg_loss = 2.094122944, pw_loss = 0.002687869, pp_loss = 0.094344677
+DeepSdf - INFO - epoch 100...
+DeepSdf - DEBUG - sdf_loss = 0.005422036, reg_loss = 2.180013732, pw_loss = 0.002270419, pp_loss = 0.098292777
+DeepSdf - DEBUG - sdf_loss = 0.005251386, reg_loss = 2.149709999, pw_loss = 0.002568121, pp_loss = 0.063457315
+DeepSdf - DEBUG - sdf_loss = 0.005446627, reg_loss = 2.210617745, pw_loss = 0.002307911, pp_loss = 0.090861673
+DeepSdf - DEBUG - sdf_loss = 0.005450416, reg_loss = 2.212452627, pw_loss = 0.002491536, pp_loss = 0.055590178
+DeepSdf - INFO - epoch 101...
+DeepSdf - DEBUG - sdf_loss = 0.005383137, reg_loss = 2.166860912, pw_loss = 0.002477825, pp_loss = 0.070783557
+DeepSdf - DEBUG - sdf_loss = 0.005352624, reg_loss = 2.137123601, pw_loss = 0.002235751, pp_loss = 0.007651321
+DeepSdf - DEBUG - sdf_loss = 0.005308386, reg_loss = 2.227393225, pw_loss = 0.002352699, pp_loss = 0.025369383
+DeepSdf - DEBUG - sdf_loss = 0.005564166, reg_loss = 2.202820719, pw_loss = 0.002204685, pp_loss = 0.011665239
+DeepSdf - INFO - epoch 102...
+DeepSdf - DEBUG - sdf_loss = 0.005149243, reg_loss = 2.087048266, pw_loss = 0.002568137, pp_loss = 0.049773734
+DeepSdf - DEBUG - sdf_loss = 0.005417557, reg_loss = 2.218615348, pw_loss = 0.002582546, pp_loss = 0.060485716
+DeepSdf - DEBUG - sdf_loss = 0.005482413, reg_loss = 2.202848151, pw_loss = 0.002049335, pp_loss = 0.031739116
+DeepSdf - DEBUG - sdf_loss = 0.005327998, reg_loss = 2.240911996, pw_loss = 0.002555049, pp_loss = 0.069446110
+DeepSdf - INFO - epoch 103...
+DeepSdf - DEBUG - sdf_loss = 0.005413550, reg_loss = 2.213670341, pw_loss = 0.002711573, pp_loss = 0.117813171
+DeepSdf - DEBUG - sdf_loss = 0.005378057, reg_loss = 2.099771584, pw_loss = 0.002297354, pp_loss = 0.053238823
+DeepSdf - DEBUG - sdf_loss = 0.005718503, reg_loss = 2.276692729, pw_loss = 0.002524923, pp_loss = 0.125187726
+DeepSdf - DEBUG - sdf_loss = 0.005314836, reg_loss = 2.100881476, pw_loss = 0.002283705, pp_loss = 0.012751598
+DeepSdf - INFO - epoch 104...
+DeepSdf - DEBUG - sdf_loss = 0.005519518, reg_loss = 2.184758963, pw_loss = 0.002550593, pp_loss = 0.052920043
+DeepSdf - DEBUG - sdf_loss = 0.005188268, reg_loss = 2.216717953, pw_loss = 0.002314241, pp_loss = 0.014397145
+DeepSdf - DEBUG - sdf_loss = 0.005705702, reg_loss = 2.183783366, pw_loss = 0.002471328, pp_loss = 0.036390488
+DeepSdf - DEBUG - sdf_loss = 0.005618435, reg_loss = 2.210519900, pw_loss = 0.002446059, pp_loss = 0.039092499
+DeepSdf - INFO - epoch 105...
+DeepSdf - DEBUG - sdf_loss = 0.005333854, reg_loss = 2.106912704, pw_loss = 0.002607233, pp_loss = 0.058373230
+DeepSdf - DEBUG - sdf_loss = 0.005199068, reg_loss = 2.186057941, pw_loss = 0.002376532, pp_loss = 0.127831149
+DeepSdf - DEBUG - sdf_loss = 0.005474030, reg_loss = 2.273821945, pw_loss = 0.002371950, pp_loss = 0.058446348
+DeepSdf - DEBUG - sdf_loss = 0.005329526, reg_loss = 2.174490708, pw_loss = 0.002363587, pp_loss = 0.037852381
+DeepSdf - INFO - epoch 106...
+DeepSdf - DEBUG - sdf_loss = 0.005237108, reg_loss = 2.151410119, pw_loss = 0.002627750, pp_loss = 0.118418206
+DeepSdf - DEBUG - sdf_loss = 0.005292154, reg_loss = 2.218435947, pw_loss = 0.002701875, pp_loss = 0.183938078
+DeepSdf - DEBUG - sdf_loss = 0.005320408, reg_loss = 2.285126459, pw_loss = 0.002145821, pp_loss = 0.094937235
+DeepSdf - DEBUG - sdf_loss = 0.005024059, reg_loss = 2.066408306, pw_loss = 0.002474441, pp_loss = 0.017165871
+DeepSdf - INFO - epoch 107...
+DeepSdf - DEBUG - sdf_loss = 0.005228738, reg_loss = 2.181516187, pw_loss = 0.002305800, pp_loss = 0.018373205
+DeepSdf - DEBUG - sdf_loss = 0.005344274, reg_loss = 2.194147737, pw_loss = 0.002627965, pp_loss = 0.052150068
+DeepSdf - DEBUG - sdf_loss = 0.005187522, reg_loss = 2.181511962, pw_loss = 0.002408213, pp_loss = 0.042954844
+DeepSdf - DEBUG - sdf_loss = 0.005190189, reg_loss = 2.168166732, pw_loss = 0.002401250, pp_loss = 0.030996676
+DeepSdf - INFO - epoch 108...
+DeepSdf - DEBUG - sdf_loss = 0.005127516, reg_loss = 2.124154452, pw_loss = 0.002413378, pp_loss = 0.031974632
+DeepSdf - DEBUG - sdf_loss = 0.005257250, reg_loss = 2.250210939, pw_loss = 0.002440469, pp_loss = 0.178000965
+DeepSdf - DEBUG - sdf_loss = 0.005026888, reg_loss = 2.152157738, pw_loss = 0.002593353, pp_loss = 0.051074257
+DeepSdf - DEBUG - sdf_loss = 0.005225918, reg_loss = 2.246055202, pw_loss = 0.002497161, pp_loss = 0.202542890
+DeepSdf - INFO - epoch 109...
+DeepSdf - DEBUG - sdf_loss = 0.005094979, reg_loss = 2.116666520, pw_loss = 0.002603406, pp_loss = 0.108200245
+DeepSdf - DEBUG - sdf_loss = 0.005034984, reg_loss = 2.227406417, pw_loss = 0.002394106, pp_loss = 0.042496768
+DeepSdf - DEBUG - sdf_loss = 0.004950268, reg_loss = 2.166900297, pw_loss = 0.002371978, pp_loss = 0.023767639
+DeepSdf - DEBUG - sdf_loss = 0.005213559, reg_loss = 2.241604983, pw_loss = 0.002301582, pp_loss = 0.037456605
+DeepSdf - INFO - epoch 110...
+DeepSdf - DEBUG - sdf_loss = 0.005072004, reg_loss = 2.203049715, pw_loss = 0.002313131, pp_loss = 0.012197512
+DeepSdf - DEBUG - sdf_loss = 0.005063447, reg_loss = 2.140614435, pw_loss = 0.002470765, pp_loss = 0.017929556
+DeepSdf - DEBUG - sdf_loss = 0.004889573, reg_loss = 2.208728625, pw_loss = 0.002420704, pp_loss = 0.028436239
+DeepSdf - DEBUG - sdf_loss = 0.005052767, reg_loss = 2.147331974, pw_loss = 0.002469451, pp_loss = 0.064395960
+DeepSdf - INFO - epoch 111...
+DeepSdf - DEBUG - sdf_loss = 0.005061930, reg_loss = 2.103263112, pw_loss = 0.002184172, pp_loss = 0.016060032
+DeepSdf - DEBUG - sdf_loss = 0.004934728, reg_loss = 2.254064639, pw_loss = 0.002455385, pp_loss = 0.063794267
+DeepSdf - DEBUG - sdf_loss = 0.005143231, reg_loss = 2.230532106, pw_loss = 0.002870777, pp_loss = 0.138490098
+DeepSdf - DEBUG - sdf_loss = 0.005021201, reg_loss = 2.168916228, pw_loss = 0.002300458, pp_loss = 0.071169978
+DeepSdf - INFO - epoch 112...
+DeepSdf - DEBUG - sdf_loss = 0.004932945, reg_loss = 2.130263107, pw_loss = 0.002573332, pp_loss = 0.047101118
+DeepSdf - DEBUG - sdf_loss = 0.005043233, reg_loss = 2.214866323, pw_loss = 0.002007437, pp_loss = 0.008549716
+DeepSdf - DEBUG - sdf_loss = 0.004994046, reg_loss = 2.180368263, pw_loss = 0.002351375, pp_loss = 0.015616407
+DeepSdf - DEBUG - sdf_loss = 0.004943655, reg_loss = 2.170778999, pw_loss = 0.002666008, pp_loss = 0.053052987
+DeepSdf - INFO - epoch 113...
+DeepSdf - DEBUG - sdf_loss = 0.004920357, reg_loss = 2.135973419, pw_loss = 0.002275049, pp_loss = 0.032577726
+DeepSdf - DEBUG - sdf_loss = 0.005004804, reg_loss = 2.298648792, pw_loss = 0.002353595, pp_loss = 0.058599898
+DeepSdf - DEBUG - sdf_loss = 0.004931123, reg_loss = 2.158540506, pw_loss = 0.002670592, pp_loss = 0.039915105
+DeepSdf - DEBUG - sdf_loss = 0.005009613, reg_loss = 2.173490695, pw_loss = 0.002384035, pp_loss = 0.060236245
+DeepSdf - INFO - epoch 114...
+DeepSdf - DEBUG - sdf_loss = 0.004866648, reg_loss = 2.264922594, pw_loss = 0.002705310, pp_loss = 0.181861373
+DeepSdf - DEBUG - sdf_loss = 0.004949596, reg_loss = 2.205354176, pw_loss = 0.002505764, pp_loss = 0.096346589
+DeepSdf - DEBUG - sdf_loss = 0.005071130, reg_loss = 2.123392064, pw_loss = 0.002103265, pp_loss = 0.019747524
+DeepSdf - DEBUG - sdf_loss = 0.004800891, reg_loss = 2.084681928, pw_loss = 0.002538402, pp_loss = 0.021617898
+DeepSdf - INFO - epoch 115...
+DeepSdf - DEBUG - sdf_loss = 0.004793093, reg_loss = 2.222422548, pw_loss = 0.002645289, pp_loss = 0.040732585
+DeepSdf - DEBUG - sdf_loss = 0.004828824, reg_loss = 2.216413648, pw_loss = 0.002407005, pp_loss = 0.020658926
+DeepSdf - DEBUG - sdf_loss = 0.004973781, reg_loss = 2.198652177, pw_loss = 0.002700145, pp_loss = 0.138135252
+DeepSdf - DEBUG - sdf_loss = 0.004848435, reg_loss = 2.122374373, pw_loss = 0.002145284, pp_loss = 0.009563794
+DeepSdf - INFO - epoch 116...
+DeepSdf - DEBUG - sdf_loss = 0.004799390, reg_loss = 2.081792031, pw_loss = 0.002483986, pp_loss = 0.037132780
+DeepSdf - DEBUG - sdf_loss = 0.004830113, reg_loss = 2.174379295, pw_loss = 0.002403170, pp_loss = 0.038640665
+DeepSdf - DEBUG - sdf_loss = 0.004900843, reg_loss = 2.227293305, pw_loss = 0.002313609, pp_loss = 0.050093083
+DeepSdf - DEBUG - sdf_loss = 0.004848270, reg_loss = 2.226613525, pw_loss = 0.002500318, pp_loss = 0.054065698
+DeepSdf - INFO - epoch 117...
+DeepSdf - DEBUG - sdf_loss = 0.004804968, reg_loss = 2.084863361, pw_loss = 0.002619334, pp_loss = 0.087073620
+DeepSdf - DEBUG - sdf_loss = 0.004802993, reg_loss = 2.250271559, pw_loss = 0.002356213, pp_loss = 0.021940321
+DeepSdf - DEBUG - sdf_loss = 0.004823856, reg_loss = 2.164975779, pw_loss = 0.002632825, pp_loss = 0.082015890
+DeepSdf - DEBUG - sdf_loss = 0.004903293, reg_loss = 2.243565595, pw_loss = 0.002453697, pp_loss = 0.046929006
+DeepSdf - INFO - epoch 118...
+DeepSdf - DEBUG - sdf_loss = 0.004870911, reg_loss = 2.280347285, pw_loss = 0.002633368, pp_loss = 0.093998097
+DeepSdf - DEBUG - sdf_loss = 0.004635269, reg_loss = 2.020195279, pw_loss = 0.002627024, pp_loss = 0.089608875
+DeepSdf - DEBUG - sdf_loss = 0.004853752, reg_loss = 2.201741953, pw_loss = 0.002255192, pp_loss = 0.033459221
+DeepSdf - DEBUG - sdf_loss = 0.004768717, reg_loss = 2.257536117, pw_loss = 0.002403404, pp_loss = 0.028118198
+DeepSdf - INFO - epoch 119...
+DeepSdf - DEBUG - sdf_loss = 0.004750646, reg_loss = 2.137478170, pw_loss = 0.002478895, pp_loss = 0.055964279
+DeepSdf - DEBUG - sdf_loss = 0.004733150, reg_loss = 2.210022087, pw_loss = 0.002669763, pp_loss = 0.113379863
+DeepSdf - DEBUG - sdf_loss = 0.004736216, reg_loss = 2.163108527, pw_loss = 0.002691149, pp_loss = 0.092842144
+DeepSdf - DEBUG - sdf_loss = 0.004750629, reg_loss = 2.254004378, pw_loss = 0.002339190, pp_loss = 0.018683002
+DeepSdf - INFO - epoch 120...
+DeepSdf - DEBUG - sdf_loss = 0.004753237, reg_loss = 2.166520443, pw_loss = 0.002366844, pp_loss = 0.022853587
+DeepSdf - DEBUG - sdf_loss = 0.004574690, reg_loss = 2.138312082, pw_loss = 0.002828901, pp_loss = 0.060517084
+DeepSdf - DEBUG - sdf_loss = 0.004842465, reg_loss = 2.165830866, pw_loss = 0.002275044, pp_loss = 0.032881764
+DeepSdf - DEBUG - sdf_loss = 0.004826331, reg_loss = 2.274995984, pw_loss = 0.002610747, pp_loss = 0.079147418
+DeepSdf - INFO - epoch 121...
+DeepSdf - DEBUG - sdf_loss = 0.004879283, reg_loss = 2.176798081, pw_loss = 0.002355484, pp_loss = 0.064960425
+DeepSdf - DEBUG - sdf_loss = 0.004639355, reg_loss = 2.132634214, pw_loss = 0.002470922, pp_loss = 0.017867321
+DeepSdf - DEBUG - sdf_loss = 0.004734149, reg_loss = 2.178937634, pw_loss = 0.002658453, pp_loss = 0.054152468
+DeepSdf - DEBUG - sdf_loss = 0.004815420, reg_loss = 2.270304533, pw_loss = 0.002491451, pp_loss = 0.065754014
+DeepSdf - INFO - epoch 122...
+DeepSdf - DEBUG - sdf_loss = 0.004657391, reg_loss = 2.155704789, pw_loss = 0.002404421, pp_loss = 0.076209054
+DeepSdf - DEBUG - sdf_loss = 0.004704226, reg_loss = 2.197997556, pw_loss = 0.002550831, pp_loss = 0.043779465
+DeepSdf - DEBUG - sdf_loss = 0.004811920, reg_loss = 2.214699472, pw_loss = 0.002783365, pp_loss = 0.090710776
+DeepSdf - DEBUG - sdf_loss = 0.004704943, reg_loss = 2.182953093, pw_loss = 0.002293000, pp_loss = 0.023093010
+DeepSdf - INFO - epoch 123...
+DeepSdf - DEBUG - sdf_loss = 0.004824213, reg_loss = 2.180270839, pw_loss = 0.002167960, pp_loss = 0.018840693
+DeepSdf - DEBUG - sdf_loss = 0.004636833, reg_loss = 2.220295500, pw_loss = 0.002381438, pp_loss = 0.024331934
+DeepSdf - DEBUG - sdf_loss = 0.004624387, reg_loss = 2.079915237, pw_loss = 0.002927013, pp_loss = 0.099261149
+DeepSdf - DEBUG - sdf_loss = 0.004698971, reg_loss = 2.261281201, pw_loss = 0.002819741, pp_loss = 0.117340096
+DeepSdf - INFO - epoch 124...
+DeepSdf - DEBUG - sdf_loss = 0.004640821, reg_loss = 2.083280509, pw_loss = 0.002370536, pp_loss = 0.017702368
+DeepSdf - DEBUG - sdf_loss = 0.004616209, reg_loss = 2.205504472, pw_loss = 0.002532474, pp_loss = 0.035067313
+DeepSdf - DEBUG - sdf_loss = 0.004769312, reg_loss = 2.208299954, pw_loss = 0.002783971, pp_loss = 0.124279063
+DeepSdf - DEBUG - sdf_loss = 0.004621013, reg_loss = 2.181265921, pw_loss = 0.002413908, pp_loss = 0.025941795
+DeepSdf - INFO - epoch 125...
+DeepSdf - DEBUG - sdf_loss = 0.004733703, reg_loss = 2.273337470, pw_loss = 0.002793353, pp_loss = 0.090756803
+DeepSdf - DEBUG - sdf_loss = 0.004704744, reg_loss = 2.168856825, pw_loss = 0.002630476, pp_loss = 0.069198146
+DeepSdf - DEBUG - sdf_loss = 0.004676380, reg_loss = 2.141446673, pw_loss = 0.002343500, pp_loss = 0.033470958
+DeepSdf - DEBUG - sdf_loss = 0.004580357, reg_loss = 2.175932892, pw_loss = 0.002478415, pp_loss = 0.022958202
+DeepSdf - INFO - epoch 126...
+DeepSdf - DEBUG - sdf_loss = 0.004883940, reg_loss = 2.234296761, pw_loss = 0.002377132, pp_loss = 0.032559592
+DeepSdf - DEBUG - sdf_loss = 0.004727914, reg_loss = 2.141108158, pw_loss = 0.002679248, pp_loss = 0.079072513
+DeepSdf - DEBUG - sdf_loss = 0.004693472, reg_loss = 2.193907528, pw_loss = 0.002379120, pp_loss = 0.027765772
+DeepSdf - DEBUG - sdf_loss = 0.004559078, reg_loss = 2.153922311, pw_loss = 0.002954059, pp_loss = 0.191638113
+DeepSdf - INFO - epoch 127...
+DeepSdf - DEBUG - sdf_loss = 0.004660823, reg_loss = 2.206082698, pw_loss = 0.002644413, pp_loss = 0.075326290
+DeepSdf - DEBUG - sdf_loss = 0.004780854, reg_loss = 2.231472121, pw_loss = 0.002794192, pp_loss = 0.138215910
+DeepSdf - DEBUG - sdf_loss = 0.004716121, reg_loss = 2.185481398, pw_loss = 0.002438556, pp_loss = 0.044518188
+DeepSdf - DEBUG - sdf_loss = 0.004566261, reg_loss = 2.111826501, pw_loss = 0.002303528, pp_loss = 0.010238825
+DeepSdf - INFO - epoch 128...
+DeepSdf - DEBUG - sdf_loss = 0.004652728, reg_loss = 2.146911784, pw_loss = 0.002493283, pp_loss = 0.045055309
+DeepSdf - DEBUG - sdf_loss = 0.004645102, reg_loss = 2.199116834, pw_loss = 0.002709510, pp_loss = 0.034989188
+DeepSdf - DEBUG - sdf_loss = 0.004617772, reg_loss = 2.120960659, pw_loss = 0.002469127, pp_loss = 0.048823429
+DeepSdf - DEBUG - sdf_loss = 0.004619858, reg_loss = 2.230670886, pw_loss = 0.002403128, pp_loss = 0.039570639
+DeepSdf - INFO - epoch 129...
+DeepSdf - DEBUG - sdf_loss = 0.004638461, reg_loss = 2.171222551, pw_loss = 0.002487270, pp_loss = 0.062521727
+DeepSdf - DEBUG - sdf_loss = 0.004630036, reg_loss = 2.196033360, pw_loss = 0.002329896, pp_loss = 0.039927649
+DeepSdf - DEBUG - sdf_loss = 0.004550581, reg_loss = 2.255065537, pw_loss = 0.002838595, pp_loss = 0.073456769
+DeepSdf - DEBUG - sdf_loss = 0.004542236, reg_loss = 2.136960416, pw_loss = 0.002451003, pp_loss = 0.026843380
+DeepSdf - INFO - epoch 130...
+DeepSdf - DEBUG - sdf_loss = 0.004562017, reg_loss = 2.201990439, pw_loss = 0.002419677, pp_loss = 0.054466830
+DeepSdf - DEBUG - sdf_loss = 0.004549269, reg_loss = 2.177167663, pw_loss = 0.002625673, pp_loss = 0.148931384
+DeepSdf - DEBUG - sdf_loss = 0.004470174, reg_loss = 2.040235743, pw_loss = 0.002704337, pp_loss = 0.039698770
+DeepSdf - DEBUG - sdf_loss = 0.004534553, reg_loss = 2.303350676, pw_loss = 0.002663621, pp_loss = 0.105078858
+DeepSdf - INFO - epoch 131...
+DeepSdf - DEBUG - sdf_loss = 0.004475309, reg_loss = 2.158415840, pw_loss = 0.002778037, pp_loss = 0.076441482
+DeepSdf - DEBUG - sdf_loss = 0.004519593, reg_loss = 2.216243986, pw_loss = 0.002583734, pp_loss = 0.053754890
+DeepSdf - DEBUG - sdf_loss = 0.004593794, reg_loss = 2.180937445, pw_loss = 0.002423040, pp_loss = 0.034545483
+DeepSdf - DEBUG - sdf_loss = 0.004606005, reg_loss = 2.200552945, pw_loss = 0.002405576, pp_loss = 0.025252854
+DeepSdf - INFO - epoch 132...
+DeepSdf - DEBUG - sdf_loss = 0.004602710, reg_loss = 2.125420049, pw_loss = 0.002397875, pp_loss = 0.029708205
+DeepSdf - DEBUG - sdf_loss = 0.004611331, reg_loss = 2.179263614, pw_loss = 0.002719623, pp_loss = 0.048744798
+DeepSdf - DEBUG - sdf_loss = 0.004631795, reg_loss = 2.277878356, pw_loss = 0.002525602, pp_loss = 0.081633346
+DeepSdf - DEBUG - sdf_loss = 0.004417822, reg_loss = 2.162223187, pw_loss = 0.002631977, pp_loss = 0.087124787
+DeepSdf - INFO - epoch 133...
+DeepSdf - DEBUG - sdf_loss = 0.004478548, reg_loss = 2.169006070, pw_loss = 0.002554140, pp_loss = 0.094405591
+DeepSdf - DEBUG - sdf_loss = 0.004487541, reg_loss = 2.151288924, pw_loss = 0.002575872, pp_loss = 0.101237836
+DeepSdf - DEBUG - sdf_loss = 0.004433508, reg_loss = 2.163208801, pw_loss = 0.002397512, pp_loss = 0.037625574
+DeepSdf - DEBUG - sdf_loss = 0.004537754, reg_loss = 2.245352952, pw_loss = 0.002718180, pp_loss = 0.106178842
+DeepSdf - INFO - epoch 134...
+DeepSdf - DEBUG - sdf_loss = 0.004485074, reg_loss = 2.266300032, pw_loss = 0.002830995, pp_loss = 0.144365969
+DeepSdf - DEBUG - sdf_loss = 0.004475267, reg_loss = 2.126615498, pw_loss = 0.002687370, pp_loss = 0.092777095
+DeepSdf - DEBUG - sdf_loss = 0.004474688, reg_loss = 2.247445429, pw_loss = 0.002363346, pp_loss = 0.015277898
+DeepSdf - DEBUG - sdf_loss = 0.004461411, reg_loss = 2.069396147, pw_loss = 0.002290710, pp_loss = 0.012560629
+DeepSdf - INFO - epoch 135...
+DeepSdf - DEBUG - sdf_loss = 0.004483507, reg_loss = 2.211764805, pw_loss = 0.002513299, pp_loss = 0.027303310
+DeepSdf - DEBUG - sdf_loss = 0.004508621, reg_loss = 2.132495616, pw_loss = 0.002274677, pp_loss = 0.014672768
+DeepSdf - DEBUG - sdf_loss = 0.004585745, reg_loss = 2.215155339, pw_loss = 0.002835080, pp_loss = 0.097062236
+DeepSdf - DEBUG - sdf_loss = 0.004429710, reg_loss = 2.177237794, pw_loss = 0.002473519, pp_loss = 0.020687623
+DeepSdf - INFO - epoch 136...
+DeepSdf - DEBUG - sdf_loss = 0.004338105, reg_loss = 2.238595205, pw_loss = 0.002891620, pp_loss = 0.062932670
+DeepSdf - DEBUG - sdf_loss = 0.004847955, reg_loss = 2.254863003, pw_loss = 0.002431007, pp_loss = 0.092585651
+DeepSdf - DEBUG - sdf_loss = 0.004648428, reg_loss = 2.099953273, pw_loss = 0.002771433, pp_loss = 0.077174530
+DeepSdf - DEBUG - sdf_loss = 0.004378623, reg_loss = 2.141810262, pw_loss = 0.002361179, pp_loss = 0.020140961
+DeepSdf - INFO - epoch 137...
+DeepSdf - DEBUG - sdf_loss = 0.004615454, reg_loss = 2.228169164, pw_loss = 0.002424125, pp_loss = 0.082410405
+DeepSdf - DEBUG - sdf_loss = 0.004359672, reg_loss = 2.063592334, pw_loss = 0.002473612, pp_loss = 0.045066928
+DeepSdf - DEBUG - sdf_loss = 0.004488826, reg_loss = 2.196895397, pw_loss = 0.003190678, pp_loss = 0.369807434
+DeepSdf - DEBUG - sdf_loss = 0.004558558, reg_loss = 2.250892183, pw_loss = 0.002641445, pp_loss = 0.180272229
+DeepSdf - INFO - epoch 138...
+DeepSdf - DEBUG - sdf_loss = 0.004459722, reg_loss = 2.187721744, pw_loss = 0.002175095, pp_loss = 0.011315907
+DeepSdf - DEBUG - sdf_loss = 0.004462028, reg_loss = 2.159898508, pw_loss = 0.002579590, pp_loss = 0.032123918
+DeepSdf - DEBUG - sdf_loss = 0.004517241, reg_loss = 2.269249730, pw_loss = 0.002881303, pp_loss = 0.063237278
+DeepSdf - DEBUG - sdf_loss = 0.004475809, reg_loss = 2.112148838, pw_loss = 0.002317181, pp_loss = 0.006809551
+DeepSdf - INFO - epoch 139...
+DeepSdf - DEBUG - sdf_loss = 0.004448240, reg_loss = 2.129950288, pw_loss = 0.002530233, pp_loss = 0.013059236
+DeepSdf - DEBUG - sdf_loss = 0.004569550, reg_loss = 2.167740882, pw_loss = 0.002564404, pp_loss = 0.041522008
+DeepSdf - DEBUG - sdf_loss = 0.004620186, reg_loss = 2.198909425, pw_loss = 0.002309743, pp_loss = 0.029231585
+DeepSdf - DEBUG - sdf_loss = 0.004382100, reg_loss = 2.200940088, pw_loss = 0.002676302, pp_loss = 0.087009757
+DeepSdf - INFO - epoch 140...
+DeepSdf - DEBUG - sdf_loss = 0.004329013, reg_loss = 2.187319504, pw_loss = 0.002951841, pp_loss = 0.101385228
+DeepSdf - DEBUG - sdf_loss = 0.004550496, reg_loss = 2.112601535, pw_loss = 0.002358281, pp_loss = 0.065719628
+DeepSdf - DEBUG - sdf_loss = 0.004385530, reg_loss = 2.166291104, pw_loss = 0.002893041, pp_loss = 0.158522837
+DeepSdf - DEBUG - sdf_loss = 0.004550079, reg_loss = 2.273839920, pw_loss = 0.002168716, pp_loss = 0.062898759
+DeepSdf - INFO - epoch 141...
+DeepSdf - DEBUG - sdf_loss = 0.004581423, reg_loss = 2.178362096, pw_loss = 0.002336998, pp_loss = 0.011951750
+DeepSdf - DEBUG - sdf_loss = 0.004406331, reg_loss = 2.108675239, pw_loss = 0.002977264, pp_loss = 0.155047191
+DeepSdf - DEBUG - sdf_loss = 0.004331168, reg_loss = 2.175235171, pw_loss = 0.002464718, pp_loss = 0.018380467
+DeepSdf - DEBUG - sdf_loss = 0.004419469, reg_loss = 2.221696771, pw_loss = 0.002440771, pp_loss = 0.049015885
+DeepSdf - INFO - epoch 142...
+DeepSdf - DEBUG - sdf_loss = 0.004410046, reg_loss = 2.317715966, pw_loss = 0.002566024, pp_loss = 0.060657658
+DeepSdf - DEBUG - sdf_loss = 0.004528172, reg_loss = 2.121836244, pw_loss = 0.002389797, pp_loss = 0.041422309
+DeepSdf - DEBUG - sdf_loss = 0.004911549, reg_loss = 2.169908392, pw_loss = 0.002717985, pp_loss = 0.032445292
+DeepSdf - DEBUG - sdf_loss = 0.004518462, reg_loss = 2.142024521, pw_loss = 0.002418964, pp_loss = 0.045035708
+DeepSdf - INFO - epoch 143...
+DeepSdf - DEBUG - sdf_loss = 0.004421572, reg_loss = 2.131261337, pw_loss = 0.002473289, pp_loss = 0.067024584
+DeepSdf - DEBUG - sdf_loss = 0.004707715, reg_loss = 2.160048618, pw_loss = 0.002490082, pp_loss = 0.081807498
+DeepSdf - DEBUG - sdf_loss = 0.004435798, reg_loss = 2.208122517, pw_loss = 0.003019213, pp_loss = 0.221849310
+DeepSdf - DEBUG - sdf_loss = 0.004436604, reg_loss = 2.169849997, pw_loss = 0.002503271, pp_loss = 0.092725899
+DeepSdf - INFO - epoch 144...
+DeepSdf - DEBUG - sdf_loss = 0.004353313, reg_loss = 2.201915264, pw_loss = 0.002698898, pp_loss = 0.108619351
+DeepSdf - DEBUG - sdf_loss = 0.004380133, reg_loss = 2.232069400, pw_loss = 0.002352164, pp_loss = 0.016257555
+DeepSdf - DEBUG - sdf_loss = 0.004445200, reg_loss = 2.177055843, pw_loss = 0.002419018, pp_loss = 0.051284185
+DeepSdf - DEBUG - sdf_loss = 0.004499012, reg_loss = 2.117589526, pw_loss = 0.002474476, pp_loss = 0.029312893
+DeepSdf - INFO - epoch 145...
+DeepSdf - DEBUG - sdf_loss = 0.004302213, reg_loss = 2.165780763, pw_loss = 0.002622038, pp_loss = 0.043489461
+DeepSdf - DEBUG - sdf_loss = 0.004325013, reg_loss = 2.174097797, pw_loss = 0.002653554, pp_loss = 0.119176463
+DeepSdf - DEBUG - sdf_loss = 0.004528852, reg_loss = 2.254448048, pw_loss = 0.002160795, pp_loss = 0.017238392
+DeepSdf - DEBUG - sdf_loss = 0.004371837, reg_loss = 2.175605500, pw_loss = 0.002501906, pp_loss = 0.053905110
+DeepSdf - INFO - epoch 146...
+DeepSdf - DEBUG - sdf_loss = 0.004369646, reg_loss = 2.179647033, pw_loss = 0.002878316, pp_loss = 0.117227239
+DeepSdf - DEBUG - sdf_loss = 0.004602868, reg_loss = 2.242615702, pw_loss = 0.002356660, pp_loss = 0.021622694
+DeepSdf - DEBUG - sdf_loss = 0.004354882, reg_loss = 2.089566823, pw_loss = 0.002563691, pp_loss = 0.065406704
+DeepSdf - DEBUG - sdf_loss = 0.004256074, reg_loss = 2.189901567, pw_loss = 0.002398379, pp_loss = 0.018807898
+DeepSdf - INFO - epoch 147...
+DeepSdf - DEBUG - sdf_loss = 0.004440709, reg_loss = 2.219442591, pw_loss = 0.002200306, pp_loss = 0.019854406
+DeepSdf - DEBUG - sdf_loss = 0.004286858, reg_loss = 2.121672785, pw_loss = 0.002596196, pp_loss = 0.049746316
+DeepSdf - DEBUG - sdf_loss = 0.004377230, reg_loss = 2.126241520, pw_loss = 0.002727988, pp_loss = 0.127997658
+DeepSdf - DEBUG - sdf_loss = 0.004382876, reg_loss = 2.238652539, pw_loss = 0.002380237, pp_loss = 0.023233755
+DeepSdf - INFO - epoch 148...
+DeepSdf - DEBUG - sdf_loss = 0.004289611, reg_loss = 2.086370675, pw_loss = 0.002355366, pp_loss = 0.053481106
+DeepSdf - DEBUG - sdf_loss = 0.004287914, reg_loss = 2.190339253, pw_loss = 0.002758587, pp_loss = 0.135165337
+DeepSdf - DEBUG - sdf_loss = 0.004166756, reg_loss = 2.197078855, pw_loss = 0.002746550, pp_loss = 0.063548023
+DeepSdf - DEBUG - sdf_loss = 0.004364634, reg_loss = 2.230602337, pw_loss = 0.002302895, pp_loss = 0.035576981
+DeepSdf - INFO - epoch 149...
+DeepSdf - DEBUG - sdf_loss = 0.004277476, reg_loss = 2.219216277, pw_loss = 0.002260547, pp_loss = 0.055622389
+DeepSdf - DEBUG - sdf_loss = 0.004224241, reg_loss = 2.249903004, pw_loss = 0.002483820, pp_loss = 0.076554880
+DeepSdf - DEBUG - sdf_loss = 0.004276384, reg_loss = 2.108340865, pw_loss = 0.002736808, pp_loss = 0.076665024
+DeepSdf - DEBUG - sdf_loss = 0.004235770, reg_loss = 2.157705627, pw_loss = 0.002584432, pp_loss = 0.077726826
+DeepSdf - INFO - epoch 150...
+DeepSdf - DEBUG - sdf_loss = 0.004269633, reg_loss = 2.183372317, pw_loss = 0.002586978, pp_loss = 0.031954642
+DeepSdf - DEBUG - sdf_loss = 0.004349934, reg_loss = 2.207246646, pw_loss = 0.002381456, pp_loss = 0.047393783
+DeepSdf - DEBUG - sdf_loss = 0.004278196, reg_loss = 2.205068613, pw_loss = 0.002371061, pp_loss = 0.020756889
+DeepSdf - DEBUG - sdf_loss = 0.004229374, reg_loss = 2.125296135, pw_loss = 0.002614154, pp_loss = 0.053803498
+DeepSdf - INFO - epoch 151...
+DeepSdf - DEBUG - sdf_loss = 0.004157402, reg_loss = 2.271674310, pw_loss = 0.002549067, pp_loss = 0.057788119
+DeepSdf - DEBUG - sdf_loss = 0.004292137, reg_loss = 2.176124124, pw_loss = 0.002419505, pp_loss = 0.081839532
+DeepSdf - DEBUG - sdf_loss = 0.004235109, reg_loss = 2.121480745, pw_loss = 0.002584078, pp_loss = 0.034433636
+DeepSdf - DEBUG - sdf_loss = 0.004127144, reg_loss = 2.141991566, pw_loss = 0.002582386, pp_loss = 0.025283648
+DeepSdf - INFO - epoch 152...
+DeepSdf - DEBUG - sdf_loss = 0.004210985, reg_loss = 2.171008400, pw_loss = 0.002465937, pp_loss = 0.027705813
+DeepSdf - DEBUG - sdf_loss = 0.004239086, reg_loss = 2.194823662, pw_loss = 0.002819225, pp_loss = 0.175879629
+DeepSdf - DEBUG - sdf_loss = 0.004193813, reg_loss = 2.185288556, pw_loss = 0.002295689, pp_loss = 0.019820203
+DeepSdf - DEBUG - sdf_loss = 0.004135506, reg_loss = 2.168753881, pw_loss = 0.002533427, pp_loss = 0.042979396
+DeepSdf - INFO - epoch 153...
+DeepSdf - DEBUG - sdf_loss = 0.004203107, reg_loss = 2.091521912, pw_loss = 0.002740170, pp_loss = 0.075876326
+DeepSdf - DEBUG - sdf_loss = 0.004094875, reg_loss = 2.193163232, pw_loss = 0.002478963, pp_loss = 0.018852760

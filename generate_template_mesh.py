@@ -25,6 +25,7 @@ def code_to_mesh(experiment_directory, checkpoint):
     arch = __import__("networks." + specs["NetworkArch"], fromlist=["Decoder"])
 
     latent_size = specs["CodeLength"]
+    print(latent_size)
 
     decoder = arch.Decoder(latent_size, **specs["NetworkSpecs"])
     decoder = torch.nn.DataParallel(decoder)

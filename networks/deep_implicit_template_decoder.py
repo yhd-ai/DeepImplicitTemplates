@@ -156,6 +156,7 @@ class Warper(nn.Module):
 
         warped_xyzs = []
         for s in range(self.steps):
+            #print(code.type(),xyz.type())
             state = self.lstm(torch.cat([code, xyz], dim=1), states[-1])
             if state[0].requires_grad:
                 state[0].register_hook(lambda x: x.clamp(min=-10, max=10))

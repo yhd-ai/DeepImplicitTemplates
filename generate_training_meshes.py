@@ -48,8 +48,9 @@ def code_to_mesh(experiment_directory, checkpoint, start_id, end_id,
     elif specs["NetworkArch"] == "deep_implicit_template_decoder":
         clamping_function = lambda x : torch.clamp(x, -specs["ClampingDistance"], specs["ClampingDistance"])
 
-    latent_vectors = ws.load_pre_trained_latent_vectors(experiment_directory, checkpoint)
-    latent_vectors = latent_vectors.cuda()
+    #latent_vectors = ws.load_pre_trained_latent_vectors(experiment_directory, checkpoint)
+    #latent_vectors = latent_vectors.cuda()
+    latent_vectors = torch.tensor(np.load(os.path.join('data','betas_f.npy'))).float().cuda()
 
     train_split_file = specs["TrainSplit"]
 
@@ -60,13 +61,14 @@ def code_to_mesh(experiment_directory, checkpoint, start_id, end_id,
 
     instance_filenames = deep_sdf.data.get_instance_filenames(data_source, train_split)
 
-    print(len(instance_filenames), " vs ", len(latent_vectors))
+    #print(len(instance_filenames), " vs ", len(latent_vectors))
 
     for i, latent_vector in enumerate(latent_vectors):
+        #print(latent_vector.shape)
         if i < start_id:
             continue
 
-        print(os.path.normpath(instance_filenames[i]))
+        #print(os.path.normpath(instance_filenames[i]))
         if sys.platform.startswith('linux'):
             dataset_name, class_name, instance_name = os.path.normpath(instance_filenames[i]).split("/")
         else:

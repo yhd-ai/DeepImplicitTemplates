@@ -29,7 +29,7 @@ def get_spec_with_default(specs, key, default):
 
 
 def get_mean_latent_vector_magnitude(latent_vectors):
-    return torch.mean(torch.norm(latent_vectors.weight.data.detach(), dim=1))
+    return torch.mean(torch.norm(latent_vectors, dim=1))
 
 
 def append_parameter_magnitudes(param_mag_log, model):
@@ -95,8 +95,8 @@ def main_function(experiment_directory, data_source, continue_from, batch_split)
                             exclude=('examples', 'third-party', 'bin'))
 
     specs = ws.load_experiment_specifications(experiment_directory)
-
-    logging.info("Experiment description: \n" + specs["Description"])
+    #print(specs["Description"])
+    logging.info("Experiment description:" + specs["Description"])
 
     # data_source = specs["DataSource"]
     train_split_file = specs["TrainSplit"]
@@ -105,7 +105,7 @@ def main_function(experiment_directory, data_source, continue_from, batch_split)
 
     logging.info(specs["NetworkSpecs"])
 
-    latent_size = specs["CodeLength"]
+    latent_size = 10 # beta shape
 
     checkpoints = list(
         range(
@@ -129,13 +129,13 @@ def main_function(experiment_directory, data_source, continue_from, batch_split)
 
         ws.save_model(experiment_directory, "latest.pth", decoder, epoch)
         ws.save_optimizer(experiment_directory, "latest.pth", optimizer_all, epoch)
-        ws.save_latent_vectors(experiment_directory, "latest.pth", lat_vecs, epoch)
+        #ws.save_latent_vectors(experiment_directory, "latest.pth", lat_vecs, epoch)
 
     def save_checkpoints(epoch):
 
         ws.save_model(experiment_directory, str(epoch) + ".pth", decoder, epoch)
         ws.save_optimizer(experiment_directory, str(epoch) + ".pth", optimizer_all, epoch)
-        ws.save_latent_vectors(experiment_directory, str(epoch) + ".pth", lat_vecs, epoch)
+        #ws.save_latent_vectors(experiment_directory, str(epoch) + ".pth", lat_vecs, epoch)
 
     def signal_handler(sig, frame):
         logging.info("Stopping early...")
@@ -176,7 +176,7 @@ def main_function(experiment_directory, data_source, continue_from, batch_split)
     logging.info("training with {} GPU(s)".format(torch.cuda.device_count()))
 
     # if torch.cuda.device_count() > 1:
-    decoder = torch.nn.DataParallel(decoder)
+    decoder = torch.nn.DataParallel(decoder).double()
 
     num_epochs = specs["NumEpochs"]
     log_frequency = get_spec_with_default(specs, "LogFrequency", 10)
@@ -205,23 +205,25 @@ def main_function(experiment_directory, data_source, continue_from, batch_split)
     logging.debug("torch num_threads: {}".format(torch.get_num_threads()))
 
     num_scenes = len(sdf_dataset)
+    #print(num_scenes)
 
     logging.info("There are {} scenes".format(num_scenes))
 
     logging.info(decoder)
 
-    lat_vecs = torch.nn.Embedding(num_scenes, latent_size, max_norm=code_bound)
-    torch.nn.init.normal_(
+    #lat_vecs = torch.nn.Embedding(num_scenes, latent_size, max_norm=code_bound)
+    lat_vecs = torch.tensor(np.load(os.path.join(data_source,'betas_f.npy')))
+    """torch.nn.init.normal_(
         lat_vecs.weight.data,
         0.0,
         get_spec_with_default(specs, "CodeInitStdDev", 1.0) / math.sqrt(latent_size),
-    )
+    )"""
 
-    logging.debug(
+    """logging.debug(
         "initialized with mean magnitude {}".format(
             get_mean_latent_vector_magnitude(lat_vecs)
         )
-    )
+    )"""
 
     loss_l1 = torch.nn.L1Loss(reduction="sum")
     loss_l1_soft = loss.SoftL1Loss(reduction="sum")
@@ -238,10 +240,7 @@ def main_function(experiment_directory, data_source, continue_from, batch_split)
                 "params": decoder.module.sdf_decoder.parameters(),
                 "lr": lr_schedules[1].get_learning_rate(0),
             },
-            {
-                "params": lat_vecs.parameters(),
-                "lr": lr_schedules[2].get_learning_rate(0),
-            },
+            
         ]
     )
 
@@ -263,9 +262,9 @@ def main_function(experiment_directory, data_source, continue_from, batch_split)
         else:
             logging.info('continuing from "{}"'.format(continue_from))
 
-            lat_epoch = ws.load_latent_vectors(
-                experiment_directory, continue_from + ".pth", lat_vecs
-            )
+            #lat_epoch = ws.load_latent_vectors(
+            #    experiment_directory, continue_from + ".pth", lat_vecs
+            #)
 
             model_epoch = ws.load_model_parameters(
                 experiment_directory, continue_from, decoder
@@ -284,10 +283,10 @@ def main_function(experiment_directory, data_source, continue_from, batch_split)
                     loss_log, lr_log, timing_log, lat_mag_log, param_mag_log, model_epoch
                 )
 
-            if not (model_epoch == optimizer_epoch and model_epoch == lat_epoch):
+            if not (model_epoch == optimizer_epoch and model_epoch == lat_vecs):
                 raise RuntimeError(
                     "epoch mismatch: {} vs {} vs {} vs {}".format(
-                        model_epoch, optimizer_epoch, lat_epoch, log_epoch
+                        model_epoch, optimizer_epoch, lat_vecs, log_epoch
                     )
                 )
 
@@ -302,13 +301,13 @@ def main_function(experiment_directory, data_source, continue_from, batch_split)
             sum(p.data.nelement() for p in decoder.parameters())
         )
     )
-    logging.info(
+    """logging.info(
         "Number of shape code parameters: {} (# codes {}, code dim {})".format(
             lat_vecs.num_embeddings * lat_vecs.embedding_dim,
             lat_vecs.num_embeddings,
             lat_vecs.embedding_dim,
         )
-    )
+    )"""
 
     use_curriculum = get_spec_with_default(specs, "UseCurriculum", False)
 
@@ -333,6 +332,7 @@ def main_function(experiment_directory, data_source, continue_from, batch_split)
 
         batch_num = len(sdf_loader)
         for bi, (sdf_data, indices) in enumerate(sdf_loader):
+            #print(indices)
 
             # Process the input data
             sdf_data = sdf_data.reshape(-1, 4)
@@ -353,6 +353,7 @@ def main_function(experiment_directory, data_source, continue_from, batch_split)
                 batch_split,
             )
 
+
             sdf_gt = torch.chunk(sdf_gt, batch_split)
 
             batch_loss_sdf = 0.0
@@ -364,8 +365,10 @@ def main_function(experiment_directory, data_source, continue_from, batch_split)
             optimizer_all.zero_grad()
 
             for i in range(batch_split):
+                #print(indices[i].shape)
 
-                batch_vecs = lat_vecs(indices[i])
+                batch_vecs = lat_vecs[indices[i]]
+                #print(batch_vecs.shape)
 
                 input = torch.cat([batch_vecs, xyz[i]], dim=1)
                 xyz_ = xyz[i].cuda()

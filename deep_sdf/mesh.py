@@ -203,7 +203,7 @@ def convert_sdf_samples_to_ply(
         numpy_3d_sdf_tensor = input_3d_sdf_array
     else:
         raise NotImplementedError
-
+    print("voxel_size",numpy_3d_sdf_tensor.max(),numpy_3d_sdf_tensor.min())
     verts, faces, normals, values = skimage.measure.marching_cubes_lewiner(
         numpy_3d_sdf_tensor, level=0.0, spacing=[voxel_size] * 3
     )
